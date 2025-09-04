@@ -1,19 +1,16 @@
+# README – VHDL Implementation Automation (Vivado)
 
-README – VHDL Implementation Automation (Vivado)
-================================================
-
-This README explains how to implement your VHDL designs using Vivado in batch mode.
+This README explains how to implement your VHDL designs using **Vivado in batch mode**.  
 The automation is split into two main scripts:
 
-1. A TCL script (`run_implementation.tcl`) executed by Vivado.
-2. A Bash wrapper (`run_impl.sh`) to loop through various clock frequencies.
+1. A **TCL script** (`run_implementation.tcl`) executed by Vivado.  
+2. A **Bash wrapper** (`run_impl.sh`) to loop through various clock frequencies.  
 
---------------------------------------------------
-🧾 Step-by-step Instructions
---------------------------------------------------
+---
 
-1️⃣ Create the Vivado TCL Script:
-----------------------------------
+## 🧾 Step-by-step Instructions
+
+### 1️⃣ Create the Vivado TCL Script
 
 Create the script using:
 ```bash
@@ -21,7 +18,6 @@ nano run_implementation.tcl
 ```
 
 Paste the following content:
-
 ```tcl
 if {$argc != 4} {
     puts "❌ Usage: vivado -mode batch -source run_implementation.tcl -tclargs ENTITY_NAME SOURCE_DIR XDC_PATH CLOCK_FREQ"
@@ -114,11 +110,11 @@ report_power          -file "$output_dir/power.txt"
 file delete -force $temp_xdc
 
 puts "\n✅ Implémentation terminée pour $entity_name à ${clk_freq} MHz."
-
 ```
 
-2️⃣ Create the Bash Wrapper Script:
-------------------------------------
+---
+
+### 2️⃣ Create the Bash Wrapper Script
 
 Create the shell script using:
 ```bash
@@ -126,7 +122,6 @@ nano run_impl.sh
 ```
 
 Paste the following content:
-
 ```bash
 #!/bin/bash
 
@@ -162,52 +157,74 @@ for FREQ in "${FREQ_LIST[@]}"; do
     echo "🚧 Implémentation pour $ENTITY à $FREQ MHz..."
     vivado -mode batch -source run_implementation.tcl -tclargs "$ENTITY" "$SOURCE" "$XDC" "$FREQ"
 done
-
 ```
 
-3️⃣ Make the script executable:
---------------------------------
+---
+
+### 3️⃣ Make the Script Executable
+
 ```bash
 chmod +x run_impl.sh
 ```
-4️⃣ Adapt your XDC file :
---------------------------------
-Modify the constraints file located in /home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new so that it is well adapted to the file tested
 
-5️⃣ Run the implementation process:
------------------------------------
+---
+
+### 4️⃣ Adapt your XDC File
+
+Modify the constraints file located in:
+```
+/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new
+```
+so that it is well adapted to the file tested.
+
+---
+
+### 5️⃣ Run the Implementation Process
+
+#### Using My Personal Code
 ```bash
-Using My Personal Code : 
-	For the MAC :
-	./run_impl.sh MAC my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-        For the Add :
-        ./run_impl.sh Add_solo my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-	For the Mult :
-        ./run_impl.sh Mult_solo my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-        For the MAC_Array : 
-        ./run_impl.sh MAC_Array my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-        
-Using Flopoco :
-	For the MAC :
-	./run_impl.sh FPMAC flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-        For the Add :
-        ./run_impl.sh FPAdd flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-	For the Mult :
-        ./run_impl.sh FPMult flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-        
-Using Frederik code :
-	For the Add :
-	./run_impl.sh ADD1CLK frederik "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
-        For the Mult :
-        ./run_impl.sh MULT1CLK frederik "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+# For the MAC
+./run_impl.sh MAC my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+
+# For the Add
+./run_impl.sh Add_solo my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+
+# For the Mult
+./run_impl.sh Mult_solo my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+
+# For the MAC_Array
+./run_impl.sh MAC_Array my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 ```
 
-This will:
-- Launch Vivado for each frequency (100 → 600 MHz),
-- Create one project per frequency,
-- Run synthesis and implementation,
-- Save reports: `utilization.txt`, `timing.txt`, `power.txt`.
+#### Using FloPoCo
+```bash
+# For the MAC
+./run_impl.sh FPMAC flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 
---------------------------------------------------
-✅ Done!
---------------------------------------------------
+# For the Add
+./run_impl.sh FPAdd flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+
+# For the Mult
+./run_impl.sh FPMult flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+```
+
+#### Using Frederik Code
+```bash
+# For the Add
+./run_impl.sh ADD1CLK frederik "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+
+# For the Mult
+./run_impl.sh MULT1CLK frederik "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+```
+
+---
+
+## 📊 This will:
+- Launch Vivado for each frequency (100 → 600 MHz),  
+- Create one project per frequency,  
+- Run synthesis and implementation,  
+- Save reports: `utilization.txt`, `timing.txt`, `power.txt`.  
+
+---
+
+## ✅ Done
