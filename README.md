@@ -35,9 +35,9 @@ Go to Code_VHDL/project/vhdl_files/
 
 Choose between:
 
-  flopoco/ → auto-generated operators.
+  flopoco → auto-generated operators.
 
-  custom/ → manually designed operators.
+  custom → manually designed operators.
 
 2. Run the Flow
 
@@ -51,13 +51,13 @@ run_impl.sh + run_implementation.tcl → launches Vivado implementation only.
 
 extract_impl_data.py collects results (frequency, LUTs, DSPs, power, WNS) from Vivado reports.
 
-Results are stored in impl_results/ and exported to .ods files for analysis.
+Results are stored in impl_results and exported to .ods files for analysis.
 
 4. Test Benches
 
-test_bench_with_python/ provides Python-based testbenches to verify functional correctness.
+test_bench_with_python provides Python-based testbenches to verify functional correctness.
 
-For more details on individual scripts, check the dedicated READMEs inside the Read_Me/ folder.
+For more details on individual scripts, check the dedicated READMEs inside the Read_Me folder.
 
 📂 Repository Structure
 
@@ -100,9 +100,9 @@ Implementation was performed on Xilinx Artix-7 FPGAs.
 
 - Stage presentation (mid-term report) → available in the repository root (PPTX).
 
-- Detailed READMEs → in Read_Me/, documenting each script.
+- Detailed READMEs → in Read_Me, documenting each script.
 
-- Implementation results → in impl_results/ (Vivado logs, reports, extracted data).
+- Implementation results → in impl_results (Vivado logs, reports, extracted data).
 
 🔮 Perspectives
 
