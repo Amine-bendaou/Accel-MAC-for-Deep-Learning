@@ -31,6 +31,7 @@ Future extensions include support for other numeric formats (bfloat16, Int8, Fix
 1. VHDL Codes
 
 Go to Code_VHDL/project/vhdl_files/
+
 Choose between:
 
   flopoco/ → auto-generated operators.
@@ -113,13 +114,17 @@ Implementation was performed on Xilinx Artix-7 FPGAs.
 👨‍💻 Author
 
 Mohammed Amine Bendaou
+
 Internship at LAAS-CNRS, ENSEEIHT, Toulouse, France
+
 Supervisors: Blaise Mulliez, Lubin Gauthier
 
 📫 Contact
 
 blaise.mulliez@toulouse-inp.fr
+
 lubin.gauthier@toulouse-inp.fr
+
 m.a.bendaou@gmail.com
 
 
