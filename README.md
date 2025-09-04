@@ -36,9 +36,9 @@ The work explores two approaches:
 
 ### 1. VHDL Codes
 Go to:
-
+```
 Code_VHDL/project/vhdl_files/
-
+```
 
 Choose between:
 - `flopoco` → auto-generated operators.  
@@ -51,32 +51,47 @@ Choose between:
 Generate parameterized VHDL from templates:
 ```bash
 python generate_vhdl.py
+```
 
 Run the full flow (generation → simulation → implementation):
-
+```bash
 ./run_all.sh
+```
 
 Only launch FPGA implementation:
-
+```bash
 ./run_impl.sh
+```
 
 Or directly with Vivado TCL:
-
+```tcl
 source run_implementation.tcl
+```
 
-3. Extract Results
+---
 
+### 3. Extract Results
+
+```bash
 python extract_impl_data.py
+```
 
-This collects results (frequency, LUTs, DSPs, power, WNS) from Vivado reports.
-Results are stored in impl_results/ and exported to .ods files for analysis.
-4. Test Benches
+This collects results (**frequency, LUTs, DSPs, power, WNS**) from Vivado reports.  
+Results are stored in `impl_results/` and exported to **.ods** files for analysis.
 
-test_bench_with_python provides Python-based testbenches to verify functional correctness.
+---
 
-For more details, check the dedicated READMEs inside the Read_Me/ folder.
-📂 Repository Structure
+### 4. Test Benches
 
+`test_bench_with_python` provides **Python-based testbenches** to verify functional correctness.  
+
+For more details, check the dedicated **READMEs** inside the `Read_Me/` folder.
+
+---
+
+## 📂 Repository Structure
+
+```
 ├── Code_VHDL/
 │   └── project/
 │       ├── vhdl_files/            # VHDL source files
@@ -94,57 +109,49 @@ For more details, check the dedicated READMEs inside the Read_Me/ folder.
 ├── Top level text file flopoco/   # Top-level design for FloPoCo
 ├── Values For Test bench with Python/ # Python-based testbenches
 └── README.md                      # Main README (this file)
-
-📊 Results & Findings
-
-    FloPoCo operators → rapid prototyping, flexible mantissa/exponent sizes, reduced dev time.
-
-    Manual VHDL design → better timing closure (WNS), fine-grained optimization of resources.
-
-    Trade-off → fast design space exploration vs. low-level optimization.
-
-👉 Implementations were performed on Xilinx Artix-7 FPGAs:
-
-    FloPoCo FPMAC: ~150 MHz (negative WNS beyond this).
-
-    Manual designs: can potentially exceed this with careful pipelining.
-
-📖 Documentation
-
-    Stage presentation (mid-term report) → available at repo root (PPTX).
-
-    Detailed READMEs → in Read_Me/.
-
-    Implementation results → in impl_results/ (Vivado logs, reports, extracted data).
-
-🔮 Perspectives
-
-    Extend support to bfloat16, Int8, Fixed16.
-
-    Explore parallel MAC units for CNNs & matrix multiplications.
-
-    Integrate into SoC architectures (Xilinx Vitis).
-
-    Apply to embedded AI accelerators (low-power inference).
-
-👨‍💻 Author
-
-Mohammed Amine Bendaou
-Internship at LAAS-CNRS, ENSEEIHT, Toulouse, France
-
-Supervisors:
-
-    Blaise Mulliez
-
-    Lubin Gauthier
-
-📫 Contact:
-
-    blaise.mulliez@toulouse-inp.fr
-
-lubin.gauthier@toulouse-inp.fr
-
-m.a.bendaou@gmail.com
-
+```
 
 ---
+
+## 📊 Results & Findings
+
+- **FloPoCo operators** → rapid prototyping, flexible mantissa/exponent sizes, reduced dev time.  
+- **Manual VHDL design** → better timing closure (WNS), fine-grained optimization of resources.  
+- **Trade-off** → fast design space exploration vs. low-level optimization.  
+
+👉 Implementations were performed on **Xilinx Artix-7 FPGAs**:
+- FloPoCo FPMAC: ~150 MHz (negative WNS beyond this).  
+- Manual designs: can potentially exceed this with **careful pipelining**.  
+
+---
+
+## 📖 Documentation
+
+- **Stage presentation** (mid-term report) → available at repo root (PPTX).  
+- **Detailed READMEs** → in `Read_Me/`.  
+- **Implementation results** → in `impl_results/` (Vivado logs, reports, extracted data).  
+
+---
+
+## 🔮 Perspectives
+
+- Extend support to **bfloat16, Int8, Fixed16**.  
+- Explore **parallel MAC units** for CNNs & matrix multiplications.  
+- Integrate into **SoC architectures (Xilinx Vitis)**.  
+- Apply to **embedded AI accelerators (low-power inference)**.  
+
+---
+
+## 👨‍💻 Author
+
+**Mohammed Amine Bendaou**  
+Internship at **LAAS-CNRS, ENSEEIHT, Toulouse, France**  
+
+Supervisors:  
+- Blaise Mulliez  
+- Lubin Gauthier  
+
+📫 Contact:  
+- blaise.mulliez@toulouse-inp.fr  
+- lubin.gauthier@toulouse-inp.fr  
+- m.a.bendaou@gmail.com  
