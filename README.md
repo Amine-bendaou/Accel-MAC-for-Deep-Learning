@@ -76,9 +76,9 @@ For more details on individual scripts, check the dedicated READMEs inside the R
         │       ├── run_impl.sh            # Automates only FPGA implementation
         │       └── run_implementation.tcl # TCL script for Vivado implementation
 
-    ├── Read_Me/                     # Folder with detailed READMEs for each script
+        ├── Read_Me/                     # Folder with detailed READMEs for each script
 
-    ├── test_bench_with_python/      # Python-based testbenches for functional validation
+        ├── test_bench_with_python/      # Python-based testbenches for functional validation
 
     └── README.md                    # Main README (this file)
 
