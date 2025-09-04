@@ -63,7 +63,7 @@ For more details on individual scripts, check the dedicated READMEs inside the R
 
     ├── Code_VHDL/
     
-    │   └── project/
+        └── project/
         │       ├── vhdl_files/            # VHDL source files
                 │       │   ├── flopoco/           # FloPoCo-generated operators
                 │       │   └── custom/            # Manually designed operators
