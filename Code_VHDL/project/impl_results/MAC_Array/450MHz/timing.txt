@@ -1,0 +1,377 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Wed Jul 23 11:34:58 2025
+| Host         : OASIS2 running 64-bit Ubuntu 24.04.2 LTS
+| Command      : report_timing_summary -file impl_results/MAC_Array/450MHz/timing.txt
+| Design       : top_MAC_Array_Test
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (2)
+6. checking no_output_delay (17)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (17)
+--------------------------------
+ There are 17 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -4.078    -1409.661                   1111                 2341        0.057        0.000                      0                 2341        0.067        0.000                       0                  1520  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)         Period(ns)      Frequency(MHz)
+-----        ------------         ----------      --------------
+sys_clk_pin  {0.000 1.111}        2.222           450.045         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin        -4.078    -1409.661                   1111                 2341        0.057        0.000                      0                 2341        0.067        0.000                       0                  1520  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :         1111  Failing Endpoints,  Worst Slack       -4.078ns,  Total Violation    -1409.661ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.057ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        0.067ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -4.078ns  (required time - arrival time)
+  Source:                 MAC_GEN[0].MAC_INST/add_inst/aligned_y_1_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@1.111ns period=2.222ns})
+  Destination:            MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[40]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@1.111ns period=2.222ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.222ns  (sys_clk_pin rise@2.222ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        6.039ns  (logic 3.428ns (56.767%)  route 2.611ns (43.233%))
+  Logic Levels:           17  (CARRY4=15 LUT4=1 LUT6=1)
+  Clock Path Skew:        -0.288ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.026ns = ( 7.248 - 2.222 ) 
+    Source Clock Delay      (SCD):    5.501ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1519, routed)        1.898     5.501    MAC_GEN[0].MAC_INST/add_inst/clk_IBUF_BUFG
+    SLICE_X6Y45          FDCE                                         r  MAC_GEN[0].MAC_INST/add_inst/aligned_y_1_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDCE (Prop_fdce_C_Q)         0.518     6.019 r  MAC_GEN[0].MAC_INST/add_inst/aligned_y_1_reg[3]/Q
+                         net (fo=4, routed)           0.956     6.974    MAC_GEN[0].MAC_INST/add_inst/aligned_y_1[3]
+    SLICE_X6Y46          LUT4 (Prop_lut4_I3_O)        0.124     7.098 r  MAC_GEN[0].MAC_INST/add_inst/signe_r_2_i_45/O
+                         net (fo=1, routed)           0.000     7.098    MAC_GEN[0].MAC_INST/add_inst/signe_r_2_i_45_n_0
+    SLICE_X6Y46          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.631 r  MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_30/CO[3]
+                         net (fo=1, routed)           0.000     7.631    MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_30_n_0
+    SLICE_X6Y47          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.748 r  MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_21/CO[3]
+                         net (fo=1, routed)           0.000     7.748    MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_21_n_0
+    SLICE_X6Y48          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.865 r  MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_12/CO[3]
+                         net (fo=1, routed)           0.000     7.865    MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_12_n_0
+    SLICE_X6Y49          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.982 r  MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.001     7.983    MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_3_n_0
+    SLICE_X6Y50          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     8.100 r  MAC_GEN[0].MAC_INST/add_inst/signe_r_2_reg_i_2/CO[3]
+                         net (fo=41, routed)          1.032     9.132    MAC_GEN[0].MAC_INST/add_inst/CO[0]
+    SLICE_X7Y50          LUT6 (Prop_lut6_I1_O)        0.124     9.256 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2[7]_i_5__2/O
+                         net (fo=1, routed)           0.621     9.878    MAC_GEN[0].MAC_INST/add_inst/r_mant_2[7]_i_5__2_n_0
+    SLICE_X5Y47          CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.526    10.404 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.404    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[7]_i_1_n_0
+    SLICE_X5Y48          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.518 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.518    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[11]_i_1_n_0
+    SLICE_X5Y49          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.632 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.001    10.632    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[15]_i_1_n_0
+    SLICE_X5Y50          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.746 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.746    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[19]_i_1_n_0
+    SLICE_X5Y51          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.860 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.860    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[23]_i_1_n_0
+    SLICE_X5Y52          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.974 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.974    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[27]_i_1_n_0
+    SLICE_X5Y53          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.088 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[31]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.088    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[31]_i_1_n_0
+    SLICE_X5Y54          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.202 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[35]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.202    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[35]_i_1_n_0
+    SLICE_X5Y55          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.316 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[39]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.316    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[39]_i_1_n_0
+    SLICE_X5Y56          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    11.539 r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[40]_i_1/O[0]
+                         net (fo=1, routed)           0.000    11.539    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[40]_i_1_n_7
+    SLICE_X5Y56          FDCE                                         r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[40]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      2.222     2.222 r  
+    E3                                                0.000     2.222 r  clk (IN)
+                         net (fo=0)                   0.000     2.222    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411     3.633 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920     5.553    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     5.644 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1519, routed)        1.603     7.248    MAC_GEN[0].MAC_INST/add_inst/clk_IBUF_BUFG
+    SLICE_X5Y56          FDCE                                         r  MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[40]/C
+                         clock pessimism              0.187     7.435    
+                         clock uncertainty           -0.035     7.399    
+    SLICE_X5Y56          FDCE (Setup_fdce_C_D)        0.062     7.461    MAC_GEN[0].MAC_INST/add_inst/r_mant_2_reg[40]
+  -------------------------------------------------------------------
+                         required time                          7.461    
+                         arrival time                         -11.539    
+  -------------------------------------------------------------------
+                         slack                                 -4.078    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 MAC_GEN[3].MAC_INST/reg_acc_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@1.111ns period=2.222ns})
+  Destination:            MAC_GEN[3].MAC_INST/add_inst/mant_x_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@1.111ns period=2.222ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.325ns  (logic 0.141ns (43.326%)  route 0.184ns (56.674%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.198ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.007ns
+    Source Clock Delay      (SCD):    1.558ns
+    Clock Pessimism Removal (CPR):    0.250ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1519, routed)        0.638     1.558    MAC_GEN[3].MAC_INST/clk_IBUF_BUFG
+    SLICE_X37Y48         FDCE                                         r  MAC_GEN[3].MAC_INST/reg_acc_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y48         FDCE (Prop_fdce_C_Q)         0.141     1.699 r  MAC_GEN[3].MAC_INST/reg_acc_reg[5]/Q
+                         net (fo=2, routed)           0.184     1.883    MAC_GEN[3].MAC_INST/add_inst/exp_x_reg[4]_0[5]
+    SLICE_X36Y51         FDCE                                         r  MAC_GEN[3].MAC_INST/add_inst/mant_x_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=1519, routed)        0.842     2.007    MAC_GEN[3].MAC_INST/add_inst/clk_IBUF_BUFG
+    SLICE_X36Y51         FDCE                                         r  MAC_GEN[3].MAC_INST/add_inst/mant_x_reg[5]/C
+                         clock pessimism             -0.250     1.756    
+    SLICE_X36Y51         FDCE (Hold_fdce_C_D)         0.070     1.826    MAC_GEN[3].MAC_INST/add_inst/mant_x_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.826    
+                         arrival time                           1.883    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 1.111 }
+Period(ns):         2.222
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         2.222       0.067      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         1.111       0.611      SLICE_X10Y35    InAs_reg[0][0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         1.111       0.611      SLICE_X10Y35    InAs_reg[0][0]/C
+
+
+

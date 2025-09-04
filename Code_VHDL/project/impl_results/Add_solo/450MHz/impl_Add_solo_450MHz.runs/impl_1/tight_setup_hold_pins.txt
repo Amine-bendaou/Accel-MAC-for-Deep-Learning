@@ -1,0 +1,42 @@
++====================+===================+===============================+
+| Launch Setup Clock | Launch Hold Clock | Pin                           |
++====================+===================+===============================+
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[7]/D           |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[9]/D           |
+| sys_clk_pin        | sys_clk_pin       | shift_count_computed_reg[1]/D |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[4]/D           |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[8]/D           |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[33]/D            |
+| sys_clk_pin        | sys_clk_pin       | shift_count_computed_reg[0]/D |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[31]/D            |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[0]/D           |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[29]/D            |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[2]/D           |
+| sys_clk_pin        | sys_clk_pin       | final_exp_reg[3]/D            |
+| sys_clk_pin        | sys_clk_pin       | final_exp_reg[4]/D            |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[5]/D           |
+| sys_clk_pin        | sys_clk_pin       | final_exp_reg[2]/D            |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[38]/D            |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[1]/D           |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[32]/D            |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[34]/D            |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[35]/D            |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[37]/D            |
+| sys_clk_pin        | sys_clk_pin       | shift_count_computed_reg[2]/D |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[3]/D           |
+| sys_clk_pin        | sys_clk_pin       | mantissa_rounded_reg[7]/D     |
+| sys_clk_pin        | sys_clk_pin       | final_exp_reg[1]/D            |
+| sys_clk_pin        | sys_clk_pin       | mantissa_rounded_reg[8]/D     |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[30]/D            |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[36]/D            |
+| sys_clk_pin        | sys_clk_pin       | r_mant_3_reg[28]/D            |
+| sys_clk_pin        | sys_clk_pin       | mantissa_rounded_reg[6]/D     |
+| sys_clk_pin        | sys_clk_pin       | mantissa_rounded_reg[10]/D    |
+| sys_clk_pin        | sys_clk_pin       | mantissa_rounded_reg[9]/D     |
+| sys_clk_pin        | sys_clk_pin       | shift_count_computed_reg[3]/D |
+| sys_clk_pin        | sys_clk_pin       | exp_common_3_reg[4]/D         |
+| sys_clk_pin        | sys_clk_pin       | final_exp_reg[0]/D            |
+| sys_clk_pin        | sys_clk_pin       | exp_common_3_reg[3]/D         |
+| sys_clk_pin        | sys_clk_pin       | mantissa_rounded_reg[4]/D     |
+| sys_clk_pin        | sys_clk_pin       | mantissa_rounded_reg[3]/D     |
++--------------------+-------------------+-------------------------------+

@@ -1,0 +1,97 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Jul 17 10:42:01 2025
+| Host         : OASIS2 running 64-bit Ubuntu 24.04.2 LTS
+| Command      : report_control_sets -verbose -file top_MAC_Test_control_sets_placed.rpt
+| Design       : top_MAC_Test
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | Yes                    |             184 |           62 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               5 |            2 |
+| Yes          | No                    | Yes                    |             241 |           79 |
+| Yes          | Yes                   | No                     |               5 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                Enable Signal               |         Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | add_inst/FSM_sequential_state_reg[0][0]    | rst_IBUF                         |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | add_inst/exp_common_10                     |                                  |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | add_inst/exp_common_3[4]_i_2_n_0           | add_inst/exp_common_3[4]_i_1_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | add_inst/final_exp[4]_i_1__0_n_0           | rst_IBUF                         |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG |                                            |                                  |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG | mult_inst/start_stage1                     | rst_IBUF                         |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | add_inst/final_mant[9]_i_1__0_n_0          | rst_IBUF                         |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG | add_inst/stage5a_valid                     | rst_IBUF                         |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | mult_inst/rounding_ready                   | rst_IBUF                         |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG | mult_inst/round_stage_ready                | rst_IBUF                         |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG | mult_inst/FSM_sequential_state_reg[1]_0[0] | rst_IBUF                         |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG | add_inst/stage6_ready                      | rst_IBUF                         |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | add_inst/FSM_sequential_state_reg[2][0]    | rst_IBUF                         |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | mult_inst/write_result                     | rst_IBUF                         |                2 |             16 |         8.00 |
+|  clk_IBUF_BUFG | mult_inst/start_stage2                     | rst_IBUF                         |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG | add_inst/E[0]                              | rst_IBUF                         |               16 |             31 |         1.94 |
+|  clk_IBUF_BUFG | start                                      | rst_IBUF                         |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG | add_start_reg_n_0                          | rst_IBUF                         |               16 |             33 |         2.06 |
+|  clk_IBUF_BUFG |                                            | rst_IBUF                         |               62 |            184 |         2.97 |
++----------------+--------------------------------------------+----------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jul 23 11:35:25 2025
+# Process ID: 132997
+# Current directory: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/MAC_Array/500MHz/impl_MAC_Array_500MHz.runs/synth_1
+# Command line: vivado -log top_MAC_Array_Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_MAC_Array_Test.tcl
+# Log file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/MAC_Array/500MHz/impl_MAC_Array_500MHz.runs/synth_1/top_MAC_Array_Test.vds
+# Journal file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/MAC_Array/500MHz/impl_MAC_Array_500MHz.runs/synth_1/vivado.jou
+# Running On: OASIS2, OS: Linux, CPU Frequency: 1200.000 MHz, CPU Physical cores: 4, Host memory: 33573 MB
+#-----------------------------------------------------------
+source top_MAC_Array_Test.tcl -notrace

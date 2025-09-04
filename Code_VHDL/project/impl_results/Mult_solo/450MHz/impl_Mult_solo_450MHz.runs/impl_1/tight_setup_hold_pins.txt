@@ -1,0 +1,8 @@
++====================+===================+=============================+
+| Launch Setup Clock | Launch Hold Clock | Pin                         |
++====================+===================+=============================+
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[8]/D  |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[7]/D  |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[9]/D  |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[10]/D |
++--------------------+-------------------+-----------------------------+

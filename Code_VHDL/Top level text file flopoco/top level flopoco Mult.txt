@@ -1,0 +1,243 @@
+---Test Version 16 values---
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity FPMult_Test is
+    generic (
+        EXP_WIDTH  : integer := 5;
+        MANT_WIDTH : integer := 10
+    );
+    port (
+        clk   : in  std_logic;
+        rst   : in  std_logic;
+        start : in  std_logic;
+        done  : out std_logic;
+        R     : out std_logic_vector(EXP_WIDTH + MANT_WIDTH downto 0)
+    );
+end entity;
+
+architecture Structural of FPMult_Test is
+
+    component FPMult16
+        port (
+            clk : in  std_logic;
+            X   : in  std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+            Y   : in  std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+            R   : out std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0)
+        );
+    end component;
+
+    constant ADD_LATENCY : integer := 2; -- Number of cycles for FPMult16 to produce valid output check the final report of flopoco 
+
+    type input_array is array (0 to 15) of std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+    
+    constant X_vals : input_array := (
+        "00" & x"41B0", "00" & x"4120", "00" & x"40F0", "00" & x"4140",
+        "00" & x"3F6A", "00" & x"C121", "00" & x"C2A5", "00" & x"C0FE",
+        "00" & x"4155", "00" & x"C73F", "00" & x"C6CB", "00" & x"C893",
+        "00" & x"C876", "00" & x"4208", "00" & x"40B2", "00" & x"40E0"
+    );
+
+    constant Y_vals : input_array := (
+        "00" & x"3F00", "00" & x"4000", "00" & x"3FC0", "00" & x"46B8",
+        "00" & x"C105", "00" & x"B88B", "00" & x"4546", "00" & x"4810",
+        "00" & x"418C", "00" & x"ACF5", "00" & x"C231", "00" & x"450D",
+        "00" & x"449A", "00" & x"3407", "00" & x"3F40", "00" & x"4000"
+    );
+
+    signal X_sig, Y_sig, R_sig : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+    signal R_final             : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+
+    signal input_index        : integer range 0 to 15;
+    signal latency_counter    : integer range 0 to ADD_LATENCY;
+
+    signal fsm_done           : std_logic := '0';
+    signal start_prev         : std_logic := '0';
+    signal start_pulse        : std_logic := '0';
+    signal feed_toggle        : std_logic := '0';
+
+    type state_type is (IDLE, FEED, WAIT_LATENCY, COLLECT, DONE_ADD);
+    signal state : state_type := IDLE;
+
+    -- Debug visibility attributes
+    attribute MARK_DEBUG : string;
+    attribute MARK_DEBUG of X_sig           : signal is "true";
+    attribute MARK_DEBUG of Y_sig           : signal is "true";
+    attribute MARK_DEBUG of R_sig           : signal is "true";
+    attribute MARK_DEBUG of R_final         : signal is "true";
+    attribute MARK_DEBUG of input_index     : signal is "true";
+    attribute MARK_DEBUG of latency_counter : signal is "true";
+    attribute MARK_DEBUG of state           : signal is "true";
+    attribute MARK_DEBUG of fsm_done        : signal is "true";
+    attribute MARK_DEBUG of start_pulse     : signal is "true";
+
+begin
+
+    -- Instantiate the floating-point multiplier
+    uut: FPMult16
+        port map (
+            clk => clk,
+            X   => X_sig,
+            Y   => Y_sig,
+            R   => R_sig
+        );
+
+    -- Output assignments
+    R    <= R_final(EXP_WIDTH + MANT_WIDTH downto 0);
+    done <= fsm_done;
+
+    -- Detect rising edge on 'start' signal
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            start_prev  <= start;
+            start_pulse <= start and not start_prev;
+        end if;
+    end process;
+
+    -- Main FSM controlling feed, wait, and result collection
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            X_sig           <= (others => '0');
+            Y_sig           <= (others => '0');
+            R_final         <= (others => '0');
+            input_index     <= 0;
+            latency_counter <= 0;
+            fsm_done        <= '0';
+            feed_toggle     <= '0';
+            state           <= IDLE;
+
+        elsif rising_edge(clk) then
+            case state is
+
+                when IDLE =>
+                    fsm_done <= '0';
+                    if start_pulse = '1' then
+                        input_index     <= 0;
+                        latency_counter <= 0;
+                        feed_toggle     <= '0';
+                        state <= FEED;
+                    end if;
+
+                when FEED =>
+                    if feed_toggle = '0' then
+                        -- Drive new input pair
+                        X_sig <= X_vals(input_index);
+                        Y_sig <= Y_vals(input_index);
+                        feed_toggle <= '1';
+                    else
+                        -- Wait one cycle to ensure inputs are registered
+                        feed_toggle <= '0';
+                        if input_index < 15 then
+                            input_index <= input_index + 1;
+                        else
+                            X_sig <= (others => '0');
+                            Y_sig <= (others => '0');
+                            state <= WAIT_LATENCY;
+                        end if;
+                    end if;
+
+                when WAIT_LATENCY =>
+                    if latency_counter < ADD_LATENCY - 1 then
+                        latency_counter <= latency_counter + 1;
+                    else
+                        latency_counter <= 0;
+                        R_final <= R_sig;
+                        state <= COLLECT;
+                    end if;
+
+                when COLLECT =>
+                    fsm_done <= '1';
+                    state <= DONE_ADD;
+
+                when DONE_ADD =>
+                    state <= DONE_ADD;
+
+                when others =>
+                    state <= IDLE;
+            end case;
+        end if;
+    end process;
+
+end Structural;
+
+---Test Version 1 value---
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity FPMult_Test is
+    generic (
+        EXP_WIDTH  : integer := 5;
+        MANT_WIDTH : integer := 10
+    );
+    port (
+        clk   : in  std_logic;
+        rst   : in  std_logic;
+        start : in  std_logic;
+        done  : out std_logic;
+        R     : out std_logic_vector(EXP_WIDTH + MANT_WIDTH downto 0)
+    );
+end entity;
+
+architecture Structural of FPMult_Test is
+
+    component FPMult16
+        port (
+            clk : in  std_logic;
+            X   : in  std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+            Y   : in  std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+            R   : out std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0)
+        );
+    end component;
+
+    constant X_val : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0) := "00" & x"40E0";
+    constant Y_val : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0) := "00" & x"4698";
+
+    signal X_sig, Y_sig, R_sig : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+    signal R_final             : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
+
+    signal fsm_done : std_logic;
+
+begin
+
+    uut: FPMult16
+        port map (
+            clk => clk,
+            X   => X_sig,
+            Y   => Y_sig,
+            R   => R_sig
+        );
+
+    -- Output assignment
+    R    <= R_final(EXP_WIDTH + MANT_WIDTH downto 0);
+    done <= fsm_done;
+
+
+    --single multiplication
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            X_sig           <= (others => '0');
+            Y_sig           <= (others => '0');
+            R_final         <= (others => '0');
+            fsm_done        <= '0';
+
+        elsif rising_edge(clk) then
+            if start = '1' then
+                X_sig     <= X_val;
+                Y_sig     <= Y_val;
+                R_final   <= R_sig;
+                fsm_done  <= '1';                 
+            end if;
+
+        end if;
+    end process;
+
+end Structural;
+
+

@@ -1,0 +1,27 @@
++====================+===================+=============================+
+| Launch Setup Clock | Launch Hold Clock | Pin                         |
++====================+===================+=============================+
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[8]/D  |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[7]/D  |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[9]/D  |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[10]/D |
+| sys_clk_pin        | sys_clk_pin       | guard_bit_reg/D             |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[2]/D         |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[0]/D         |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[1]/D         |
+| sys_clk_pin        | sys_clk_pin       | rounded_exp_reg[2]/D        |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[3]/D         |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[4]/D  |
+| sys_clk_pin        | sys_clk_pin       | round_bit_reg/D             |
+| sys_clk_pin        | sys_clk_pin       | final_mant_reg[5]/D         |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[3]/D  |
+| sys_clk_pin        | sys_clk_pin       | sticky_bit_reg/D            |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[0]/D  |
+| sys_clk_pin        | sys_clk_pin       | final_exp_reg[1]/D          |
+| sys_clk_pin        | sys_clk_pin       | rounded_exp_reg[3]/D        |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[1]/D  |
+| sys_clk_pin        | sys_clk_pin       | mant_r0/CEP                 |
+| sys_clk_pin        | sys_clk_pin       | mantissa_ext_next_reg[2]/D  |
+| sys_clk_pin        | sys_clk_pin       | rounded_exp_reg[1]/D        |
++--------------------+-------------------+-----------------------------+

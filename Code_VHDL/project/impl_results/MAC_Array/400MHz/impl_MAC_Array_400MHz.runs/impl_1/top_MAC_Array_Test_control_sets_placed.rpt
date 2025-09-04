@@ -1,0 +1,138 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Wed Jul 23 11:30:31 2025
+| Host         : OASIS2 running 64-bit Ubuntu 24.04.2 LTS
+| Command      : report_control_sets -verbose -file top_MAC_Array_Test_control_sets_placed.rpt
+| Design       : top_MAC_Array_Test
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    60 |
+|    Minimum number of control sets                        |    60 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   157 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    60 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    13 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |    12 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |    16 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |           16 |
+| No           | No                    | Yes                    |             727 |          277 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              57 |           20 |
+| Yes          | No                    | Yes                    |             687 |          244 |
+| Yes          | Yes                   | No                     |              20 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                      Enable Signal                      |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | index                                                   | rst_IBUF                                                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_inst/exp_common_3[4]_i_2__2_n_0 | MAC_GEN[3].MAC_INST/add_inst/exp_common_3[4]_i_1__2_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_inst/final_exp[4]_i_1__2_n_0    | rst_IBUF                                                |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_inst/final_exp[4]_i_1__0_n_0    | rst_IBUF                                                |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_inst/exp_common_10              |                                                         |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_inst/exp_common_3[4]_i_2__0_n_0 | MAC_GEN[1].MAC_INST/add_inst/exp_common_3[4]_i_1__0_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_inst/exp_common_3[4]_i_2__1_n_0 | MAC_GEN[2].MAC_INST/add_inst/exp_common_3[4]_i_1__1_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_inst/final_exp[4]_i_1__1_n_0    | rst_IBUF                                                |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_inst/exp_common_10              |                                                         |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_inst/final_exp[4]_i_1_n_0       | rst_IBUF                                                |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_inst/exp_common_3[4]_i_2_n_0    | MAC_GEN[0].MAC_INST/add_inst/exp_common_3[4]_i_1_n_0    |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_inst/exp_common_10              |                                                         |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_inst/exp_common_10              |                                                         |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/mult_start_reg_n_0                  | rst_IBUF                                                |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/mult_start_reg_n_0                  | rst_IBUF                                                |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/mult_inst/E[0]                      | rst_IBUF                                                |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_inst/final_mant[9]_i_1__0_n_0   | rst_IBUF                                                |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_inst/final_mant[9]_i_1_n_0      | rst_IBUF                                                |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_inst/final_mant[9]_i_1__2_n_0   | rst_IBUF                                                |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_inst/final_mant[9]_i_1__1_n_0   | rst_IBUF                                                |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_inst/stage5a_valid              | rst_IBUF                                                |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_inst/stage5a_valid              | rst_IBUF                                                |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/mult_inst/rounding_ready_reg_n_0    | rst_IBUF                                                |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_inst/stage5a_valid              | rst_IBUF                                                |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/mult_inst/rounding_ready            | rst_IBUF                                                |                3 |             11 |         3.67 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/mult_inst/rounding_ready_reg_n_0    | rst_IBUF                                                |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_inst/stage5a_valid              | rst_IBUF                                                |                5 |             11 |         2.20 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/mult_inst/rounding_ready_reg_n_0    | rst_IBUF                                                |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/mult_inst/write_result_reg_n_0      | rst_IBUF                                                |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/mult_inst/done_reg_0[0]             | rst_IBUF                                                |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/mult_inst/write_result_reg_n_0      | rst_IBUF                                                |                6 |             14 |         2.33 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/mult_inst/done_reg_0[0]             | rst_IBUF                                                |                2 |             14 |         7.00 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/mult_inst/write_result_reg_n_0      | rst_IBUF                                                |                2 |             14 |         7.00 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/mult_inst/round_stage_ready_reg_n_0 | rst_IBUF                                                |                3 |             14 |         4.67 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/mult_inst/round_stage_ready_reg_n_0 | rst_IBUF                                                |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/mult_inst/round_stage_ready_reg_n_0 | rst_IBUF                                                |                3 |             14 |         4.67 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/mult_inst/done_reg_0[0]             | rst_IBUF                                                |                5 |             14 |         2.80 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_inst/done_internal_reg_1[0]     | rst_IBUF                                                |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/mult_inst/round_stage_ready         | rst_IBUF                                                |                5 |             15 |         3.00 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_inst/done_internal_reg_0[0]     | rst_IBUF                                                |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_inst/done_internal_reg_1[0]     | rst_IBUF                                                |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_inst/stage6_ready_reg_0[0]      | rst_IBUF                                                |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_inst/stage6_ready_reg_0[0]      | rst_IBUF                                                |                3 |             15 |         5.00 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_inst/stage6_ready_reg_0[0]      | rst_IBUF                                                |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_inst/done_internal_reg_1[0]     | rst_IBUF                                                |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/mult_inst/done_reg_0[0]             | rst_IBUF                                                |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/mult_inst/start_stage2_reg_n_0      | rst_IBUF                                                |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/mult_inst/start_stage2_reg_n_0      | rst_IBUF                                                |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/mult_inst/write_result              | rst_IBUF                                                |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_inst/E[0]                       | rst_IBUF                                                |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/mult_inst/start_stage2_reg_n_0      | rst_IBUF                                                |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/mult_inst/start_stage2              | rst_IBUF                                                |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG |                                                         |                                                         |               16 |             24 |         1.50 |
+|  clk_IBUF_BUFG | MAC_GEN[3].MAC_INST/add_start_reg_n_0                   | rst_IBUF                                                |               16 |             30 |         1.88 |
+|  clk_IBUF_BUFG | MAC_GEN[2].MAC_INST/add_start_reg_n_0                   | rst_IBUF                                                |               13 |             30 |         2.31 |
+|  clk_IBUF_BUFG | MAC_GEN[1].MAC_INST/add_start_reg_n_0                   | rst_IBUF                                                |               13 |             30 |         2.31 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/start__0                            | rst_IBUF                                                |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG | MAC_GEN[0].MAC_INST/add_start_reg_n_0                   | rst_IBUF                                                |               23 |             33 |         1.43 |
+|  clk_IBUF_BUFG | InAs_reg[0]0                                            |                                                         |               10 |             37 |         3.70 |
+|  clk_IBUF_BUFG |                                                         | rst_IBUF                                                |              277 |            727 |         2.62 |
++----------------+---------------------------------------------------------+---------------------------------------------------------+------------------+----------------+--------------+
+
+

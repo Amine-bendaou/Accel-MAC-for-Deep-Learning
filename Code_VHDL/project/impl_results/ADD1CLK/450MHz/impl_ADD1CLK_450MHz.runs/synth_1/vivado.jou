@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Jul 24 10:53:24 2025
+# Process ID: 36573
+# Current directory: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/ADD1CLK/450MHz/impl_ADD1CLK_450MHz.runs/synth_1
+# Command line: vivado -log addition_1clk.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source addition_1clk.tcl
+# Log file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/ADD1CLK/450MHz/impl_ADD1CLK_450MHz.runs/synth_1/addition_1clk.vds
+# Journal file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/ADD1CLK/450MHz/impl_ADD1CLK_450MHz.runs/synth_1/vivado.jou
+# Running On: OASIS2, OS: Linux, CPU Frequency: 1340.300 MHz, CPU Physical cores: 4, Host memory: 33573 MB
+#-----------------------------------------------------------
+source addition_1clk.tcl -notrace

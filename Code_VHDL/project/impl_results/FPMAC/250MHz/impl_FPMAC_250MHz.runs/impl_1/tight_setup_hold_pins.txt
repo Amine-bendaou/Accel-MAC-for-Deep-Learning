@@ -1,0 +1,24 @@
++====================+===================+======================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                  |
++====================+===================+======================================================================+
+| sys_clk_pin        | sys_clk_pin       | DUT/IEEEFPFMA_5_10_Freq250_uid2LeadingZeroCounter/level5_d1_reg[7]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[26]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[6]/D                          |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[30]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[14]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[29]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[5]/D                          |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[35]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[33]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[36]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[25]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[34]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[23]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[13]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[31]/D                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level1_d1_reg[2]/D                          |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/ps_d1_reg[2]/D                              |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[3]/D                                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[2]/D                                         |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[1]/D                                         |
++--------------------+-------------------+----------------------------------------------------------------------+

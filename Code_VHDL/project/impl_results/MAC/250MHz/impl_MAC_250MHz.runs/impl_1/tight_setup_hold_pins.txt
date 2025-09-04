@@ -1,0 +1,16 @@
++====================+===================+========================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                    |
++====================+===================+========================================+
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[28]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[11]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[10]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/shift_count_computed_reg[1]/D |
+| sys_clk_pin        | sys_clk_pin       | add_inst/shift_count_computed_reg[2]/D |
+| sys_clk_pin        | sys_clk_pin       | add_inst/shift_count_computed_reg[0]/D |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[3]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[9]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[8]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[4]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/signe_r_3_reg/D               |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[6]/D           |
++--------------------+-------------------+----------------------------------------+

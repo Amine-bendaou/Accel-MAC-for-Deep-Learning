@@ -1,0 +1,382 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jul 21 10:17:23 2025
+# Process ID: 73075
+# Current directory: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/impl_FPMAC_350MHz.runs/synth_1
+# Command line: vivado -log top_FPMAC_Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_FPMAC_Test.tcl
+# Log file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/impl_FPMAC_350MHz.runs/synth_1/top_FPMAC_Test.vds
+# Journal file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/impl_FPMAC_350MHz.runs/synth_1/vivado.jou
+# Running On: OASIS2, OS: Linux, CPU Frequency: 3712.601 MHz, CPU Physical cores: 4, Host memory: 33572 MB
+#-----------------------------------------------------------
+source top_FPMAC_Test.tcl -notrace
+Command: synth_design -top top_FPMAC_Test -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 73135
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2432.844 ; gain = 372.770 ; free physical = 24440 ; free virtual = 35669
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3461.191; parent = 2432.848; children = 1028.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_FPMAC_Test' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:40]
+INFO: [Synth 8-3491] module 'FPMAC16' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:426' bound to instance 'DUT' of component 'FPMAC16' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'FPMAC16' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:437]
+INFO: [Synth 8-3491] module 'RightShifter11_by_max_37_Freq350_uid4' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:212' bound to instance 'RightShifterComponent' of component 'RightShifter11_by_max_37_Freq350_uid4' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:765]
+INFO: [Synth 8-638] synthesizing module 'RightShifter11_by_max_37_Freq350_uid4' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:219]
+INFO: [Synth 8-256] done synthesizing module 'RightShifter11_by_max_37_Freq350_uid4' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:219]
+INFO: [Synth 8-3491] module 'LZC_26_Freq350_uid6' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:278' bound to instance 'IEEEFPFMA_5_10_Freq350_uid2LeadingZeroCounter' of component 'LZC_26_Freq350_uid6' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:784]
+INFO: [Synth 8-638] synthesizing module 'LZC_26_Freq350_uid6' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:284]
+INFO: [Synth 8-256] done synthesizing module 'LZC_26_Freq350_uid6' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:284]
+INFO: [Synth 8-3491] module 'LeftShifter37_by_max_36_Freq350_uid8' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:355' bound to instance 'NormalizationShifter' of component 'LeftShifter37_by_max_36_Freq350_uid8' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:801]
+INFO: [Synth 8-638] synthesizing module 'LeftShifter37_by_max_36_Freq350_uid8' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:362]
+INFO: [Synth 8-256] done synthesizing module 'LeftShifter37_by_max_36_Freq350_uid8' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:362]
+INFO: [Synth 8-256] done synthesizing module 'FPMAC16' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:437]
+INFO: [Synth 8-226] default block is never used [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'top_FPMAC_Test' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:40]
+WARNING: [Synth 8-3936] Found unconnected internal register 'level6_reg' and it is trimmed from '100' to '73' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPMAC_Test_350MHz.vhd:397]
+WARNING: [Synth 8-7129] Port RndMode[1] in module FPMAC16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RndMode[0] in module FPMAC16 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2503.812 ; gain = 443.738 ; free physical = 24376 ; free virtual = 35606
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3532.160; parent = 2503.816; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2518.656 ; gain = 458.582 ; free physical = 24376 ; free virtual = 35606
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3547.004; parent = 2518.660; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2518.656 ; gain = 458.582 ; free physical = 24376 ; free virtual = 35606
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3547.004; parent = 2518.660; children = 1028.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2518.656 ; gain = 0.000 ; free physical = 24376 ; free virtual = 35606
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/temp_350MHz.xdc]
+WARNING: [Vivado 12-2489] -period contains time 2.857143 which will be rounded to 2.857 to ensure it is an integer multiple of 1 picosecond [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/temp_350MHz.xdc:3]
+WARNING: [Vivado 12-2489] -waveform contains time 1.428571 which will be rounded to 1.429 to ensure it is an integer multiple of 1 picosecond [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/temp_350MHz.xdc:3]
+Finished Parsing XDC File [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/temp_350MHz.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/temp_350MHz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_FPMAC_Test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_FPMAC_Test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2687.406 ; gain = 0.000 ; free physical = 24422 ; free virtual = 35652
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2687.406 ; gain = 0.000 ; free physical = 24422 ; free virtual = 35652
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24452 ; free virtual = 35682
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24459 ; free virtual = 35689
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24459 ; free virtual = 35689
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_FPMAC_Test'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                wait_mac |                             0010 |                               01
+                    load |                             0100 |                               10
+                done_mac |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top_FPMAC_Test'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24459 ; free virtual = 35690
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   38 Bit       Adders := 2     
+	   2 Input   17 Bit       Adders := 1     
+	   7 Input    7 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 3     
+	   3 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 4     
+	   3 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 3     
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               68 Bit    Registers := 1     
+	               42 Bit    Registers := 1     
+	               38 Bit    Registers := 1     
+	               37 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               15 Bit    Registers := 9     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 44    
++---Muxes : 
+	   2 Input   74 Bit        Muxes := 1     
+	   2 Input   73 Bit        Muxes := 1     
+	   2 Input   68 Bit        Muxes := 1     
+	   2 Input   52 Bit        Muxes := 1     
+	   2 Input   44 Bit        Muxes := 1     
+	   2 Input   42 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   38 Bit        Muxes := 2     
+	   2 Input   37 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 3     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 3     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP DUT/multOp, operation Mode is: A*B.
+DSP Report: operator DUT/multOp is absorbed into DSP DUT/multOp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24488 ; free virtual = 35723
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.456; parent = 1642.861; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FPMAC16     | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24400 ; free virtual = 35636
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1987.190; parent = 1782.658; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24384 ; free virtual = 35620
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24377 ; free virtual = 35612
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24395 ; free virtual = 35630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24395 ; free virtual = 35630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24395 ; free virtual = 35630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24395 ; free virtual = 35630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24395 ; free virtual = 35630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24395 ; free virtual = 35630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_FPMAC_Test | DUT/RisNaN_d4_reg          | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_FPMAC_Test | DUT/sticky1_d3_reg         | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_FPMAC_Test | DUT/tentativeRisInf_d4_reg | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++---------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FPMAC16     | (A*B)'      | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    37|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     4|
+|5     |LUT2    |    61|
+|6     |LUT3    |   139|
+|7     |LUT4    |   118|
+|8     |LUT5    |   112|
+|9     |LUT6    |   232|
+|10    |SRL16E  |     3|
+|11    |FDCE    |    58|
+|12    |FDPE    |     1|
+|13    |FDRE    |   272|
+|14    |FDSE    |     4|
+|15    |IBUF    |     3|
+|16    |OBUF    |    17|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24406 ; free virtual = 35641
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1999.460; parent = 1794.928; children = 204.595
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3683.738; parent = 2655.395; children = 1028.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2687.406 ; gain = 458.582 ; free physical = 24433 ; free virtual = 35668
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2687.406 ; gain = 627.332 ; free physical = 24433 ; free virtual = 35668
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2687.406 ; gain = 0.000 ; free physical = 24528 ; free virtual = 35763
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2687.406 ; gain = 0.000 ; free physical = 24521 ; free virtual = 35756
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 179d7fc2
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 2687.406 ; gain = 976.309 ; free physical = 24691 ; free virtual = 35926
+INFO: [Common 17-1381] The checkpoint '/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPMAC/350MHz/impl_FPMAC_350MHz.runs/synth_1/top_FPMAC_Test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_FPMAC_Test_utilization_synth.rpt -pb top_FPMAC_Test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 21 10:18:02 2025...

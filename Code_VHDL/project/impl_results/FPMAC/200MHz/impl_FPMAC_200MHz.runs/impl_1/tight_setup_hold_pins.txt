@@ -1,0 +1,10 @@
++====================+===================+==============================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                          |
++====================+===================+==============================================+
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[30]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/ps_d1_reg[3]/D      |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/ps_d1_reg[5]/D      |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[2]/D                 |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[3]/D                 |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[1]/D                 |
++--------------------+-------------------+----------------------------------------------+

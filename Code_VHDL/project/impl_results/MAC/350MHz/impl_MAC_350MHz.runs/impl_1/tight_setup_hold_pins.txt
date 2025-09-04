@@ -1,0 +1,35 @@
++====================+===================+========================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                    |
++====================+===================+========================================+
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[32]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[30]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[26]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[18]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/shift_count_computed_reg[1]/D |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[11]/D            |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[3]/D             |
+| sys_clk_pin        | sys_clk_pin       | add_inst/r_mant_2_reg[2]/D             |
+| sys_clk_pin        | sys_clk_pin       | add_inst/shift_count_computed_reg[0]/D |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[0]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[7]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[3]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/signe_r_3_reg/D               |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[6]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[5]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[8]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[9]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[4]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[1]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_mant_reg[2]/D           |
+| sys_clk_pin        | sys_clk_pin       | add_inst/shift_count_computed_reg[5]/D |
+| sys_clk_pin        | sys_clk_pin       | add_inst/exp_common_1_reg[0]/D         |
+| sys_clk_pin        | sys_clk_pin       | add_inst/shift_count_computed_reg[4]/D |
+| sys_clk_pin        | sys_clk_pin       | reg_in_b_reg[11]/D                     |
+| sys_clk_pin        | sys_clk_pin       | reg_in_a_reg[9]/D                      |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_exp_reg[4]/D            |
+| sys_clk_pin        | sys_clk_pin       | mult_start_reg/D                       |
+| sys_clk_pin        | sys_clk_pin       | add_inst/final_exp_reg[3]/D            |
+| sys_clk_pin        | sys_clk_pin       | FSM_sequential_state_reg[0]/D          |
+| sys_clk_pin        | sys_clk_pin       | FSM_sequential_state_reg[2]/D          |
+| sys_clk_pin        | sys_clk_pin       | reg_in_b_reg[5]/D                      |
++--------------------+-------------------+----------------------------------------+

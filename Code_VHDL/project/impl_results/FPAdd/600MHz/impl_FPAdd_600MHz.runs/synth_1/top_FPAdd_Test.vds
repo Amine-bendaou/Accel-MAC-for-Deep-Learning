@@ -1,0 +1,355 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jul 18 12:58:06 2025
+# Process ID: 126616
+# Current directory: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/impl_FPAdd_600MHz.runs/synth_1
+# Command line: vivado -log top_FPAdd_Test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_FPAdd_Test.tcl
+# Log file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/impl_FPAdd_600MHz.runs/synth_1/top_FPAdd_Test.vds
+# Journal file: /home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/impl_FPAdd_600MHz.runs/synth_1/vivado.jou
+# Running On: OASIS2, OS: Linux, CPU Frequency: 1197.545 MHz, CPU Physical cores: 4, Host memory: 33572 MB
+#-----------------------------------------------------------
+source top_FPAdd_Test.tcl -notrace
+Command: synth_design -top top_FPAdd_Test -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 126691
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2431.207 ; gain = 369.770 ; free physical = 22534 ; free virtual = 34273
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3459.555; parent = 2431.211; children = 1028.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_FPAdd_Test' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:20]
+INFO: [Synth 8-3491] module 'FPAdd16' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:454' bound to instance 'uut' of component 'FPAdd16' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'FPAdd16' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:461]
+INFO: [Synth 8-3491] module 'RightShifterSticky13_by_max_12_Freq600_uid4' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:99' bound to instance 'RightShifterComponent' of component 'RightShifterSticky13_by_max_12_Freq600_uid4' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:833]
+INFO: [Synth 8-638] synthesizing module 'RightShifterSticky13_by_max_12_Freq600_uid4' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'RightShifterSticky13_by_max_12_Freq600_uid4' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:107]
+INFO: [Synth 8-3491] module 'IntAdder_14_Freq600_uid6' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:185' bound to instance 'fracAdder' of component 'IntAdder_14_Freq600_uid6' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:845]
+INFO: [Synth 8-638] synthesizing module 'IntAdder_14_Freq600_uid6' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'IntAdder_14_Freq600_uid6' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:193]
+INFO: [Synth 8-3491] module 'LZC_13_Freq600_uid8' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:247' bound to instance 'IEEEFPAdd_5_10_Freq600_uid2LeadingZeroCounter' of component 'LZC_13_Freq600_uid8' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:856]
+INFO: [Synth 8-638] synthesizing module 'LZC_13_Freq600_uid8' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:253]
+INFO: [Synth 8-256] done synthesizing module 'LZC_13_Freq600_uid8' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:253]
+INFO: [Synth 8-3491] module 'LeftShifter14_by_max_13_Freq600_uid10' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:320' bound to instance 'LeftShifterComponent' of component 'LeftShifter14_by_max_13_Freq600_uid10' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:864]
+INFO: [Synth 8-638] synthesizing module 'LeftShifter14_by_max_13_Freq600_uid10' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:327]
+INFO: [Synth 8-256] done synthesizing module 'LeftShifter14_by_max_13_Freq600_uid10' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:327]
+INFO: [Synth 8-3491] module 'IntAdder_15_Freq600_uid13' declared at '/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:383' bound to instance 'roundingAdder' of component 'IntAdder_15_Freq600_uid13' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:883]
+INFO: [Synth 8-638] synthesizing module 'IntAdder_15_Freq600_uid13' [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:391]
+INFO: [Synth 8-256] done synthesizing module 'IntAdder_15_Freq600_uid13' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:391]
+INFO: [Synth 8-256] done synthesizing module 'FPAdd16' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:461]
+INFO: [Synth 8-256] done synthesizing module 'top_FPAdd_Test' (0#1) [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:20]
+WARNING: [Synth 8-3936] Found unconnected internal register 'level1_d1_reg' and it is trimmed from '13' to '1' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:143]
+WARNING: [Synth 8-3936] Found unconnected internal register 'level2_d1_reg' and it is trimmed from '13' to '2' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:142]
+WARNING: [Synth 8-3936] Found unconnected internal register 'level4_d2_reg' and it is trimmed from '13' to '8' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:139]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ps_d2_reg' and it is trimmed from '4' to '2' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:137]
+WARNING: [Synth 8-3936] Found unconnected internal register 'X_1_d4_reg' and it is trimmed from '15' to '14' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:212]
+WARNING: [Synth 8-3936] Found unconnected internal register 'X_1_d3_reg' and it is trimmed from '15' to '14' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:211]
+WARNING: [Synth 8-3936] Found unconnected internal register 'X_1_d2_reg' and it is trimmed from '15' to '14' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:210]
+WARNING: [Synth 8-3936] Found unconnected internal register 'X_1_d1_reg' and it is trimmed from '15' to '14' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:209]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d1_reg' and it is trimmed from '15' to '14' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:213]
+WARNING: [Synth 8-3936] Found unconnected internal register 'level4_reg' and it is trimmed from '29' to '27' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:356]
+WARNING: [Synth 8-3936] Found unconnected internal register 'X_1_d2_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:408]
+WARNING: [Synth 8-3936] Found unconnected internal register 'X_1_d1_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:407]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d11_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:419]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d10_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:418]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d9_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:417]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d8_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:416]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d7_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:415]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d6_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:414]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d5_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:413]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d4_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:412]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d3_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:411]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d2_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:410]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Y_1_d1_reg' and it is trimmed from '16' to '15' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:409]
+WARNING: [Synth 8-3936] Found unconnected internal register 'normalizedSignificand_d1_reg' and it is trimmed from '27' to '2' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:756]
+WARNING: [Synth 8-3936] Found unconnected internal register 'expDiff_d1_reg' and it is trimmed from '6' to '4' bits. [/home/intern/Bendaou/stage_2025/Code VHDL/project/vhdl_files/flopoco/top_FPAdd_Test_600MHz.vhd:636]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2503.176 ; gain = 441.738 ; free physical = 22464 ; free virtual = 34204
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3531.523; parent = 2503.180; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2526.020 ; gain = 464.582 ; free physical = 22463 ; free virtual = 34204
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3554.367; parent = 2526.023; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2526.020 ; gain = 464.582 ; free physical = 22463 ; free virtual = 34204
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3554.367; parent = 2526.023; children = 1028.344
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2526.020 ; gain = 0.000 ; free physical = 22463 ; free virtual = 34204
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/temp_600MHz.xdc]
+WARNING: [Vivado 12-2489] -period contains time 1.666667 which will be rounded to 1.667 to ensure it is an integer multiple of 1 picosecond [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/temp_600MHz.xdc:3]
+WARNING: [Vivado 12-2489] -waveform contains time 0.833333 which will be rounded to 0.833 to ensure it is an integer multiple of 1 picosecond [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/temp_600MHz.xdc:3]
+Finished Parsing XDC File [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/temp_600MHz.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/temp_600MHz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_FPAdd_Test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_FPAdd_Test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2683.770 ; gain = 0.000 ; free physical = 22410 ; free virtual = 34150
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2683.770 ; gain = 0.000 ; free physical = 22410 ; free virtual = 34150
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22464 ; free virtual = 34204
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22464 ; free virtual = 34204
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22472 ; free virtual = 34212
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22471 ; free virtual = 34213
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   15 Bit       Adders := 1     
+	   3 Input   14 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 1     
+	   3 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     14 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 40    
+	               14 Bit    Registers := 8     
+	               13 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 124   
++---Muxes : 
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 3     
+	   2 Input   13 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22479 ; free virtual = 34225
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1847.609; parent = 1642.976; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22485 ; free virtual = 34231
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1951.191; parent = 1746.620; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22469 ; free virtual = 34215
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1952.480; parent = 1747.909; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22465 ; free virtual = 34211
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1952.941; parent = 1748.370; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22488 ; free virtual = 34234
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.176; parent = 1748.604; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22488 ; free virtual = 34234
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.176; parent = 1748.604; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22488 ; free virtual = 34234
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.203; parent = 1748.632; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22488 ; free virtual = 34234
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.270; parent = 1748.698; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22488 ; free virtual = 34234
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.270; parent = 1748.698; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22488 ; free virtual = 34234
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.285; parent = 1748.714; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_FPAdd_Test | uut/LeftShifterComponent/level0_d3_reg[6]                          | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_FPAdd_Test | uut/LeftShifterComponent/level0_d3_reg[0]                          | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_FPAdd_Test | uut/roundingAdder/X_1_d2_reg[14]                                   | 3      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|top_FPAdd_Test | uut/xExpFieldZero_d6_reg                                           | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_FPAdd_Test | uut/stickyLow_d6_reg                                               | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_FPAdd_Test | uut/IEEEFPAdd_5_10_Freq600_uid2LeadingZeroCounter/level4_d1_reg[2] | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|top_FPAdd_Test | uut/fracAdder/X_1_d4_reg[9]                                        | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++---------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     1|
+|4     |LUT2   |    22|
+|5     |LUT3   |    30|
+|6     |LUT4   |    10|
+|7     |LUT5   |    17|
+|8     |LUT6   |    46|
+|9     |SRL16E |    14|
+|10    |FDCE   |    17|
+|11    |FDRE   |   168|
+|12    |IBUF   |     3|
+|13    |OBUF   |    17|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22488 ; free virtual = 34234
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1953.301; parent = 1748.729; children = 204.634
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3680.102; parent = 2651.758; children = 1028.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2683.770 ; gain = 464.582 ; free physical = 22516 ; free virtual = 34262
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2683.770 ; gain = 622.332 ; free physical = 22516 ; free virtual = 34262
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2683.770 ; gain = 0.000 ; free physical = 22580 ; free virtual = 34325
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2683.770 ; gain = 0.000 ; free physical = 22621 ; free virtual = 34367
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a13af6fa
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2683.770 ; gain = 972.277 ; free physical = 22772 ; free virtual = 34518
+INFO: [Common 17-1381] The checkpoint '/home/intern/Bendaou/stage_2025/Code VHDL/project/impl_results/FPAdd/600MHz/impl_FPAdd_600MHz.runs/synth_1/top_FPAdd_Test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_FPAdd_Test_utilization_synth.rpt -pb top_FPAdd_Test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 18 12:58:42 2025...

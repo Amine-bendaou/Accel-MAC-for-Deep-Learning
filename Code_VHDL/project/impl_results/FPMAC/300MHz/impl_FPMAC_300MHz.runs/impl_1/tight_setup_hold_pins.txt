@@ -1,0 +1,26 @@
++====================+===================+==============================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                          |
++====================+===================+==============================================+
+| sys_clk_pin        | sys_clk_pin       | DUT/RsgnTentative_d1_reg/D                   |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level3_d1_reg[1]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[11]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[7]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[5]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[6]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[4]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[3]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[1]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[14]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[9]/D  |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[17]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[16]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[13]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level0_d1_reg[15]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[0]/D                 |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[4]/D                 |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[2]/D                 |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[3]/D                 |
+| sys_clk_pin        | sys_clk_pin       | DUT/expDiffSmall_d1_reg/D                    |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[1]/D                 |
+| sys_clk_pin        | sys_clk_pin       | DUT/Rsgn_d1_reg/D                            |
++--------------------+-------------------+----------------------------------------------+

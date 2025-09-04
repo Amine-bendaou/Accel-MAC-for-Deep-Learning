@@ -1,0 +1,15 @@
++====================+===================+===========================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                       |
++====================+===================+===========================================================================+
+| sys_clk_pin        | sys_clk_pin       | DUT/RsgnTentative_d1_reg/D                                                |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/ps_d1_reg[3]/D                                   |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/ps_d1_reg[4]/D                                   |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[3]/D                                              |
+| sys_clk_pin        | sys_clk_pin       | DUT/expTentative_d1_reg[2]/D                                              |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level5_d1_reg[29]/D                              |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level5_d1_reg[28]/D                              |
+| sys_clk_pin        | sys_clk_pin       | DUT/IEEEFPFMA_5_10_Freq400_uid2LeadingZeroCounter/outHighBits_d1_reg[0]/D |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level5_d1_reg[24]/D                              |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level5_d1_reg[32]/D                              |
+| sys_clk_pin        | sys_clk_pin       | DUT/NormalizationShifter/level5_d1_reg[26]/D                              |
++--------------------+-------------------+---------------------------------------------------------------------------+

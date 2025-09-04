@@ -1,0 +1,24 @@
++====================+===================+======================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                  |
++====================+===================+======================================================================+
+| sys_clk_pin        | sys_clk_pin       | uut/IEEEFPAdd_5_10_Freq500_uid2LeadingZeroCounter/digit3_d1_reg/D    |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/level1_d1_reg[11]/D                         |
+| sys_clk_pin        | sys_clk_pin       | uut/roundingAdder/X_1_d2_reg[11]_srl3_srlopt/D                       |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/level1_d1_reg[12]/D                         |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/level1_d1_reg[9]/D                          |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/level1_d1_reg[6]/D                          |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/level1_d1_reg[8]/D                          |
+| sys_clk_pin        | sys_clk_pin       | uut/roundingAdder/X_1_d2_reg[13]_srl3/D                              |
+| sys_clk_pin        | sys_clk_pin       | uut/roundingAdder/X_1_d2_reg[10]_srl3_srlopt/D                       |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/ps_d1_reg[1]/D                              |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/level1_d1_reg[5]/D                          |
+| sys_clk_pin        | sys_clk_pin       | uut/IEEEFPAdd_5_10_Freq500_uid2LeadingZeroCounter/level2_d1_reg[2]/D |
+| sys_clk_pin        | sys_clk_pin       | uut/IEEEFPAdd_5_10_Freq500_uid2LeadingZeroCounter/level2_d1_reg[0]/D |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/ps_d1_reg[2]/D                              |
+| sys_clk_pin        | sys_clk_pin       | uut/IEEEFPAdd_5_10_Freq500_uid2LeadingZeroCounter/level2_d1_reg[1]/D |
+| sys_clk_pin        | sys_clk_pin       | uut/roundingAdder/X_1_d1_reg[9]/D                                    |
+| sys_clk_pin        | sys_clk_pin       | uut/LeftShifterComponent/ps_d1_reg[3]/D                              |
+| sys_clk_pin        | sys_clk_pin       | R_final_reg[5]/D                                                     |
+| sys_clk_pin        | sys_clk_pin       | uut/roundingAdder/X_1_d1_reg[8]/D                                    |
+| sys_clk_pin        | sys_clk_pin       | R_final_reg[9]/D                                                     |
++--------------------+-------------------+----------------------------------------------------------------------+
