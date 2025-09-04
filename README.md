@@ -1,6 +1,7 @@
 # Stage-LAAS-CNRS-2025
 
 🖥️ VHDL MAC Units for Deep Learning on FPGA
+
 📌 Project Overview
 
 This repository contains the work carried out during my internship at LAAS-CNRS / ENSEEIHT (Toulouse, France) in summer 2025.
@@ -60,24 +61,26 @@ For more details on individual scripts, check the dedicated READMEs inside the R
 
 📂 Repository Structure
 
-├── Code_VHDL/
-│   └── project/
-│       ├── vhdl_files/            # VHDL source files
-│       │   ├── flopoco/           # FloPoCo-generated operators
-│       │   └── custom/            # Manually designed operators
-│       ├── template/              # VHDL code templates (Flopoco + custom)
-│       ├── impl_results/          # FPGA implementation results (logs, reports)
-│       ├── extract_impl_data.py   # Script to parse and extract implementation data
-│       ├── generate_vhdl.py       # Script to generate parameterized VHDL
-│       ├── run_all.sh             # Automates the full flow (gen → sim → impl)
-│       ├── run_impl.sh            # Automates only FPGA implementation
-│       └── run_implementation.tcl # TCL script for Vivado implementation
-│
-├── Read_Me/                     # Folder with detailed READMEs for each script
-│
-├── test_bench_with_python/      # Python-based testbenches for functional validation
-│
-└── README.md                    # Main README (this file)
+    ├── Code_VHDL/
+    
+    │   └── project/
+        │       ├── vhdl_files/            # VHDL source files
+                │       │   ├── flopoco/           # FloPoCo-generated operators
+                │       │   └── custom/            # Manually designed operators
+                
+        │       ├── template/              # VHDL code templates (Flopoco + custom)
+        │       ├── impl_results/          # FPGA implementation results (logs, reports)
+        │       ├── extract_impl_data.py   # Script to parse and extract implementation data
+        │       ├── generate_vhdl.py       # Script to generate parameterized VHDL
+        │       ├── run_all.sh             # Automates the full flow (gen → sim → impl)
+        │       ├── run_impl.sh            # Automates only FPGA implementation
+        │       └── run_implementation.tcl # TCL script for Vivado implementation
+
+    ├── Read_Me/                     # Folder with detailed READMEs for each script
+
+    ├── test_bench_with_python/      # Python-based testbenches for functional validation
+
+    └── README.md                    # Main README (this file)
 
 📊 Results & Findings
 
