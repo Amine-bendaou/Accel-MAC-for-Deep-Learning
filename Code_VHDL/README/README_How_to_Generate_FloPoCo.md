@@ -83,7 +83,7 @@ This means the output is ready after 5 pipeline cycles. You can use this value w
 
 - To test your FloPoCo code in either **Test Bench** or **Implementation** mode, add the top-level file located at:  
 ```
-/home/intern/Bendaou/stage_2025/Top level text file flopoco
+STAGE-LAAS-CNRS-2025/CODE_VHDL/Top level text file flopoco
 ```
 Then, select the appropriate top-level configuration based on whether you're testing with a single value or with 16 values.  
 If using the 16-value configuration, adjust the latency by setting the correct value found in the FloPoCo report.

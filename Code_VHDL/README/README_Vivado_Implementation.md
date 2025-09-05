@@ -17,7 +17,7 @@ Create the script using:
 nano run_implementation.tcl
 ```
 
-Paste the following content:
+Paste the following content (the complete file is also available on my GitHub under**STAGE-LAAS-CNRS-2025/CODE_VHDL**):
 ```tcl
 if {$argc != 4} {
     puts "❌ Usage: vivado -mode batch -source run_implementation.tcl -tclargs ENTITY_NAME SOURCE_DIR XDC_PATH CLOCK_FREQ"
@@ -121,7 +121,7 @@ Create the shell script using:
 nano run_impl.sh
 ```
 
-Paste the following content:
+Paste the following content (the complete file is also available on my GitHub under**STAGE-LAAS-CNRS-2025/CODE_VHDL**):
 ```bash
 #!/bin/bash
 
@@ -171,11 +171,14 @@ chmod +x run_impl.sh
 
 ### 4️⃣ Adapt your XDC File
 
-Modify the constraints file located in:
+Modify the constraints file located in. For example in my project it was located in : 
+
 ```
 /home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new
 ```
-so that it is well adapted to the file tested.
+You can find the constraints file in **STAGE-LAAS-CNRS-2025/CODE_VHDL**. Depending on where the constraints file is located in your project, you will need to adjust the path accordingly when running the command in the next step (step 5).
+
+So that it is well adapted to the file tested.
 
 ---
 
