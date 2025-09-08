@@ -174,7 +174,7 @@ chmod +x run_impl.sh
 Modify the constraints file located in. For example in my project it was located in : 
 
 ```
-/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new
+/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new
 ```
 You can find the constraints file in **Accel-MAC-for-Deep-Learning/CODE_VHDL**. Depending on where the constraints file is located in your project, you will need to adjust the path accordingly when running the command in the next step (step 5).
 
@@ -187,37 +187,37 @@ So that it is well adapted to the file tested.
 #### Using My Personal Code
 ```bash
 # For the MAC
-./run_impl.sh MAC my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh MAC my_code "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 
 # For the Add
-./run_impl.sh Add_solo my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh Add_solo my_code "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 
 # For the Mult
-./run_impl.sh Mult_solo my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh Mult_solo my_code "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 
 # For the MAC_Array
-./run_impl.sh MAC_Array my_code "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh MAC_Array my_code "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 ```
 
 #### Using FloPoCo
 ```bash
 # For the MAC
-./run_impl.sh FPMAC flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh FPMAC flopoco "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 
 # For the Add
-./run_impl.sh FPAdd flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh FPAdd flopoco "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 
 # For the Mult
-./run_impl.sh FPMult flopoco "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh FPMult flopoco "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 ```
 
 #### Using Frederik Code
 ```bash
 # For the Add
-./run_impl.sh ADD1CLK frederik "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh ADD1CLK frederik "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 
 # For the Mult
-./run_impl.sh MULT1CLK frederik "/home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
+./run_impl.sh MULT1CLK frederik "/home/intern/Bendaou/stage_2025/Code_VHDL/stage_2025.srcs/constrs_1/new/contraintes.xdc"
 ```
 
 ---
