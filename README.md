@@ -1,4 +1,4 @@
-# Stage-LAAS-CNRS-2025
+# Accel_MAC_for_Deep_Learning
 
 # 🖥️ VHDL MAC Units for Deep Learning on FPGA
 
