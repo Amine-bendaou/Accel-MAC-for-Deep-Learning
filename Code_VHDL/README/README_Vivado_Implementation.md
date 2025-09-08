@@ -17,7 +17,7 @@ Create the script using:
 nano run_implementation.tcl
 ```
 
-Paste the following content (the complete file is also available on my GitHub under**STAGE-LAAS-CNRS-2025/CODE_VHDL**):
+Paste the following content (the complete file is also available on my GitHub under **Accel-MAC-for-Deep-Learning/CODE_VHDL**) :
 ```tcl
 if {$argc != 4} {
     puts "❌ Usage: vivado -mode batch -source run_implementation.tcl -tclargs ENTITY_NAME SOURCE_DIR XDC_PATH CLOCK_FREQ"
