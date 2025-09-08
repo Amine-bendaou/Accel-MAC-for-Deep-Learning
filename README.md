@@ -1,4 +1,4 @@
-# Accel_MAC_for_Deep_Learning
+# Accel-MAC-for-Deep-Learning
 
 # 🖥️ VHDL MAC Units for Deep Learning on FPGA
 
