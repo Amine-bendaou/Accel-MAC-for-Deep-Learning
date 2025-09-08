@@ -121,7 +121,7 @@ Create the shell script using:
 nano run_impl.sh
 ```
 
-Paste the following content (the complete file is also available on my GitHub under**STAGE-LAAS-CNRS-2025/CODE_VHDL**):
+Paste the following content (the complete file is also available on my GitHub under **Accel-MAC-for-Deep-Learning/CODE_VHDL**):
 ```bash
 #!/bin/bash
 
@@ -176,7 +176,7 @@ Modify the constraints file located in. For example in my project it was located
 ```
 /home/intern/Bendaou/stage_2025/Code VHDL/stage_2025.srcs/constrs_1/new
 ```
-You can find the constraints file in **STAGE-LAAS-CNRS-2025/CODE_VHDL**. Depending on where the constraints file is located in your project, you will need to adjust the path accordingly when running the command in the next step (step 5).
+You can find the constraints file in **Accel-MAC-for-Deep-Learning/CODE_VHDL**. Depending on where the constraints file is located in your project, you will need to adjust the path accordingly when running the command in the next step (step 5).
 
 So that it is well adapted to the file tested.
 
