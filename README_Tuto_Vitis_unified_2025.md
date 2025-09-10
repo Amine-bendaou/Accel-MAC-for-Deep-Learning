@@ -66,7 +66,7 @@ Ce tutoriel explique étape par étape comment créer et exécuter un programme 
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-31-27.png" alt="" width="475">
 
-> Un fichier `.c` s’ouvrira automatiquement dans l’éditeur.
+Un fichier `.c` s’ouvrira automatiquement dans l’éditeur.
 
 ---
 
