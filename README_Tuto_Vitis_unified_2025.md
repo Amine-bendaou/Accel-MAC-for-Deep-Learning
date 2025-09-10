@@ -1,4 +1,4 @@
-# Tutoriel : Créer et exécuter un programme ‘Hello World’ sur Nexys A7 avec Vitis Unified IDE
+# Tutoriel : Créer et exécuter un programme ‘Hello World’ sur Nexys A7 avec Vitis 2025.1 Unified IDE
 
 Ce tutoriel explique étape par étape comment créer et exécuter un programme `Hello World` sur la carte Nexys A7 en utilisant l'IDE Vitis Unified.
 
