@@ -36,10 +36,11 @@ Ce tutoriel explique étape par étape comment créer et exécuter un programme 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-48-03.png" alt="" width="475">
 
 6. Attendre quelques secondes que les champs **Operating System** et **Processor** se remplissent automatiquement.
+7. Cliquer sur **Next**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-22-46.png" alt="" width="475">
 
-7. Cliquer sur **Finish**.
+8. Cliquer sur **Finish**.
 
 ---
 
