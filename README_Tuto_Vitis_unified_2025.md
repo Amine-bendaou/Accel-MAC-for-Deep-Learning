@@ -1,99 +1,113 @@
-# Tutoriel : Créer et exécuter un programme ‘Hello World’ sur Nexys A7 avec Vitis 2025.1 Unified IDE
+# Tutorial: Create and Run a ‘Hello World’ Program on Nexys A7 with Vitis 2025.1 Unified IDE
+>>>>>>> e5d54d6 (Update ReadMe file)
 
-Ce tutoriel explique étape par étape comment créer et exécuter un programme `Hello World` sur la carte Nexys A7 en utilisant l'IDE Vitis Unified.
-
----
-
-## Prérequis
-
-- Carte Nexys A7
-- Vitis Unified IDE installé
-- Fichier de conception matérielle (.xsa) prêt à l'emploi
-- Connexion USB entre la carte et l'ordinateur
+This tutorial explains step by step how to create and run a `Hello World` program on the Nexys A7 board using the Vitis Unified IDE.
 
 ---
 
-## Étape 1 : Définir le workspace
+## Prerequisites
 
-1. Ouvrir Vitis Unified IDE.
-2. Sur la page de bienvenue, cliquer sur **Set Workspace**.
-3. Spécifier un dossier vide pour le workspace.
-4. Cliquer sur **OK**.
+- Nexys A7 board
+- Vitis Unified IDE installed
+- Ready-to-use hardware design file (.xsa)
+- USB connection between the board and the computer
 
 ---
 
-## Étape 2 : Créer un composant de plateforme
+## Step 1: Set the Workspace
 
-1. Cliquer sur **Create Platform Component**.
-2. Choisir un nom pour le composant.
-3. Cliquer sur **Next**.
+1. Open Vitis Unified IDE.
+2. On the welcome page, click **Set Workspace**.
+3. Specify an empty folder for the workspace.
+4. Click **OK**.
+
+---
+
+## Step 2: Create a Platform Component
+
+1. Click **Create Platform Component**.
+2. Choose a name for the component.
+3. Click **Next**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-20-03.png" alt="" width="475">
 
-4. Sélectionner **Hardware Design** et choisir le fichier `.xsa` correspondant à votre conception matérielle.
-5. Cliquer sur **Next**.
+4. Select **Hardware Design** and choose the `.xsa` file corresponding to your hardware design.
+5. Click **Next**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-48-03.png" alt="" width="475">
 
+<<<<<<< HEAD
 6. Attendre quelques secondes que les champs **Operating System** et **Processor** se remplissent automatiquement.
 7. Cliquer sur **Next**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-22-46.png" alt="" width="475">
 
 8. Cliquer sur **Finish**.
+=======
+6. Wait a few seconds for the **Operating System** and **Processor** fields to fill automatically.
+7. Click **Next**.
+
+<img title="" src="pictures/Screenshot from 2025-09-10 16-22-46.png" alt="" width="475">
+
+8. Click **Finish**.
+>>>>>>> e5d54d6 (Update ReadMe file)
 
 ---
 
-## Étape 3 : Créer un projet logiciel ‘Hello World’
+## Step 3: Create a ‘Hello World’ Software Project
 
-1. Dans la barre latérale gauche, aller à la section **Examples**.
-2. Dans **Embedded Software Examples**, chercher **Hello World**.
-3. Cliquer sur le signe **+** pour créer un projet à partir de l'exemple.
-4. Choisir un nom pour le projet (par exemple `hello_world`).
-5. Cliquer sur **Next**.
+1. In the left sidebar, go to the **Examples** section.
+2. Under **Embedded Software Examples**, look for **Hello World**.
+3. Click the **+** sign to create a project from the example.
+4. Choose a name for the project (e.g., `hello_world`).
+5. Click **Next**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-28-27.png" alt="" width="475">
 
-6. Sélectionner la plateforme créée précédemment.
-7. Cliquer sur **Next**.
+6. Select the platform created earlier.
+7. Click **Next**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-50-58.png" alt="" width="475">
 
-8. Cliquer sur **Next** à nouveau.
+8. Click **Next** again.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-31-19.png" alt="" width="475">
 
-9. Cliquer sur **Finish**.
+9. Click **Finish**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-31-27.png" alt="" width="475">
 
+<<<<<<< HEAD
 Un fichier `.c` s’ouvrira automatiquement dans l’éditeur.
+=======
+A `.c` file will automatically open in the editor.
+>>>>>>> e5d54d6 (Update ReadMe file)
 
 ---
 
-## Étape 4 : Compiler et exécuter le projet
+## Step 4: Build and Run the Project
 
-1. Aller dans **Vitis Explorer** (icône en forme de maison).
-2. Dans la section **Flow** en bas :
-   - Sélectionner le composant **Platform**.
-   - Cliquer sur **Build**.
-3. Ensuite, sélectionner le projet logiciel **hello_world_app**.
-4. Cliquer sur **Build** pour compiler le programme.
-5. Ouvrir un terminal et taper la commande suivante pour accéder à la console série :
+1. Go to **Vitis Explorer** (house-shaped icon).
+2. In the **Flow** section at the bottom:
+   - Select the **Platform** component.
+   - Click **Build**.
+3. Next, select the **hello_world_app** component.
+4. Click **Build** to compile the program.
+5. Open a terminal and enter the following command to access the serial console:
    ```bash
    sudo tio -b 230400 /dev/ttyUSB1
    ```
-6. Retourner dans Vitis et cliquer sur **Run** pour exécuter le programme sur la carte.
-7. Le message `Hello World` s'affichera dans le terminal.
+6. Go back to Vitis and click Run to execute the program on the board.
+7. The message `Hello World` will appear in the terminal.
 
 ---
 
-## Remarques
+## Notes
 
-- Assurez-vous que le port USB correspondant à votre Nexys A7 est correct (`/dev/ttyUSB1` dans l’exemple).
-- La vitesse de communication est de 230400 bauds.
-- Si le terminal ne s’affiche pas, vérifier les connexions USB et les permissions.
+- ake sure the USB port corresponding to your Nexys A7 is correct (`/dev/ttyUSB1` dans l’exemple).
+- The communication speed is 230400 baud.
+- If the terminal does not display, check the USB connections and permissions.
 
 ---
 
-Ce tutoriel permet de démarrer rapidement avec un projet simple sur Nexys A7 et Vitis Unified IDE.
+This tutorial provides a quick start with a simple project on Nexys A7 and Vitis Unified IDE.

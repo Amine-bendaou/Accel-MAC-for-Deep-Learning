@@ -32,6 +32,8 @@ entity top_FPMult_Test is
         clk   : in  std_logic;
         rst   : in  std_logic;
         start : in  std_logic;
+        X_in  : in  std_logic_vector(EXP_WIDTH+MANT_WIDTH downto 0);
+        Y_in  : in  std_logic_vector(EXP_WIDTH+MANT_WIDTH downto 0);
         done  : out std_logic;
         R     : out std_logic_vector(EXP_WIDTH + MANT_WIDTH downto 0)
     );
@@ -48,8 +50,6 @@ architecture Structural of top_FPMult_Test is
         );
     end component;
 
-    constant X_val : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0) := "00" & x"40E0";
-    constant Y_val : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0) := "00" & x"4698";
 
     signal X_sig, Y_sig, R_sig : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
     signal R_final             : std_logic_vector(EXP_WIDTH + MANT_WIDTH + 2 downto 0);
@@ -78,8 +78,8 @@ begin
 
         elsif rising_edge(clk) then
             if start = '1' then
-                X_sig    <= X_val;
-                Y_sig    <= Y_val;
+                X_sig <= "00" & X_in;
+                Y_sig <= "00" & Y_in;
                 R_final  <= R_sig;
                 fsm_done <= '1';
             end if;
