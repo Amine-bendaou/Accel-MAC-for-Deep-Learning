@@ -93,6 +93,7 @@ A `.c` file will automatically open in the editor.
 - Make sure the USB port corresponding to your Nexys A7 is correct (`/dev/ttyUSB1`).
 - The communication speed is 230400 baud.
 - If the terminal does not display, check the USB connections and permissions.
+- **Please note that the default keyboard layout in Vitis 2025.1 Unified is QWERTY, not AZERTY. To use standard shortcuts (like CTRL + Z or CTRL + A), you need to change a setting. Go to File → Preferences → Settings. In Settings, navigate to Application → Keyboard, and under the Dispatch section, select Code.**
 
 ---
 
