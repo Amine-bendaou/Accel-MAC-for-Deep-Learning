@@ -1,5 +1,4 @@
 # Tutorial: Create and Run a ‘Hello World’ Program on Nexys A7 with Vitis 2025.1 Unified IDE
->>>>>>> e5d54d6 (Update ReadMe file)
 
 This tutorial explains step by step how to create and run a `Hello World` program on the Nexys A7 board using the Vitis Unified IDE.
 
@@ -36,21 +35,12 @@ This tutorial explains step by step how to create and run a `Hello World` progra
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-48-03.png" alt="" width="475">
 
-<<<<<<< HEAD
-6. Attendre quelques secondes que les champs **Operating System** et **Processor** se remplissent automatiquement.
-7. Cliquer sur **Next**.
-
-<img title="" src="pictures/Screenshot from 2025-09-10 16-22-46.png" alt="" width="475">
-
-8. Cliquer sur **Finish**.
-=======
 6. Wait a few seconds for the **Operating System** and **Processor** fields to fill automatically.
 7. Click **Next**.
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-22-46.png" alt="" width="475">
 
 8. Click **Finish**.
->>>>>>> e5d54d6 (Update ReadMe file)
 
 ---
 
@@ -77,11 +67,7 @@ This tutorial explains step by step how to create and run a `Hello World` progra
 
 <img title="" src="pictures/Screenshot from 2025-09-10 16-31-27.png" alt="" width="475">
 
-<<<<<<< HEAD
-Un fichier `.c` s’ouvrira automatiquement dans l’éditeur.
-=======
 A `.c` file will automatically open in the editor.
->>>>>>> e5d54d6 (Update ReadMe file)
 
 ---
 
@@ -104,7 +90,7 @@ A `.c` file will automatically open in the editor.
 
 ## Notes
 
-- ake sure the USB port corresponding to your Nexys A7 is correct (`/dev/ttyUSB1` dans l’exemple).
+- Make sure the USB port corresponding to your Nexys A7 is correct (`/dev/ttyUSB1`).
 - The communication speed is 230400 baud.
 - If the terminal does not display, check the USB connections and permissions.
 
