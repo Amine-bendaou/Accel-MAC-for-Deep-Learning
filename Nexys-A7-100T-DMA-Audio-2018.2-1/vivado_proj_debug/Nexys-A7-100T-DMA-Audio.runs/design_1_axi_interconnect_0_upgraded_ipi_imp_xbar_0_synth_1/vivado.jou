@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Sep 16 09:08:51 2025
+# Process ID         : 603923
+# Current directory  : /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio.runs/design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1
+# Command line       : vivado -log design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl
+# Log file           : /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio.runs/design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0.vds
+# Journal file       : /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio.runs/design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vivado.jou
+# Running On         : OASIS2
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Xeon(R) CPU E5-1620 v4 @ 3.50GHz
+# CPU Frequency      : 1197.344 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 33573 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 42163 MB
+# Available Virtual  : 25876 MB
+#-----------------------------------------------------------
+source design_1_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl -notrace

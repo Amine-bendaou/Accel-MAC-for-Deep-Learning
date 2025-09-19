@@ -1,0 +1,408 @@
+
+*** Running vivado
+    with args -log design_1_FP_Mult_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FP_Mult_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Sep 19 15:34:11 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_FP_Mult_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/ip_repo/FP_Mult_1_0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/ip_repo/FP_multiplier_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/ip_repo/FP_multiply_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/ip_repo/flopoco_multiply_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/ip_repo/multiplier_flopoco_1_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_FP_Mult_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1679394
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2213.555 ; gain = 441.766 ; free physical = 7872 ; free virtual = 29823
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_FP_Mult_0_0' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ip/design_1_FP_Mult_0_0/synth/design_1_FP_Mult_0_0.vhd:84]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter EXP_WIDTH bound to: 5 - type: integer 
+	Parameter MANT_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'FP_Mult' declared at '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult.vhd:5' bound to instance 'U0' of component 'FP_Mult' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ip/design_1_FP_Mult_0_0/synth/design_1_FP_Mult_0_0.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'FP_Mult' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult.vhd:52]
+WARNING: [Synth 8-5640] Port 'x_in' is missing in component declaration [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult.vhd:55]
+WARNING: [Synth 8-5640] Port 'y_in' is missing in component declaration [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult.vhd:55]
+WARNING: [Synth 8-5640] Port 'start' is missing in component declaration [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult.vhd:55]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'FP_Mult_slave_lite_v1_0_S00_AXI' declared at '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'FP_Mult_slave_lite_v1_0_S00_AXI_inst' of component 'FP_Mult_slave_lite_v1_0_S00_AXI' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'FP_Mult_slave_lite_v1_0_S00_AXI' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult_slave_lite_v1_0_S00_AXI.vhd:94]
+	Parameter EXP_WIDTH bound to: 5 - type: integer 
+	Parameter MANT_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'top_FPMult_Test' declared at '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:25' bound to instance 'my_fp_mult' of component 'top_FPMult_Test' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult_slave_lite_v1_0_S00_AXI.vhd:340]
+INFO: [Synth 8-638] synthesizing module 'top_FPMult_Test' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:41]
+INFO: [Synth 8-3491] module 'FPMult16' declared at '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:208' bound to instance 'uut' of component 'FPMult16' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'FPMult16' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:215]
+INFO: [Synth 8-3491] module 'IntMultiplier_11x11_22_Freq100_uid5' declared at '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:118' bound to instance 'SignificandMultiplication' of component 'IntMultiplier_11x11_22_Freq100_uid5' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'IntMultiplier_11x11_22_Freq100_uid5' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'IntMultiplier_11x11_22_Freq100_uid5' (0#1) [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:125]
+INFO: [Synth 8-3491] module 'IntAdder_17_Freq100_uid9' declared at '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:168' bound to instance 'RoundingAdder' of component 'IntAdder_17_Freq100_uid9' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'IntAdder_17_Freq100_uid9' [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:176]
+INFO: [Synth 8-256] done synthesizing module 'IntAdder_17_Freq100_uid9' (0#1) [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:176]
+INFO: [Synth 8-226] default block is never used [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:309]
+INFO: [Synth 8-256] done synthesizing module 'FPMult16' (0#1) [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'top_FPMult_Test' (0#1) [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/src/FPMult.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FP_Mult_slave_lite_v1_0_S00_AXI' (0#1) [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult_slave_lite_v1_0_S00_AXI.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'FP_Mult' (0#1) [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_FP_Mult_0_0' (0#1) [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ip/design_1_FP_Mult_0_0/synth/design_1_FP_Mult_0_0.vhd:84]
+WARNING: [Synth 8-3848] Net R in module/entity FP_Mult_slave_lite_v1_0_S00_AXI does not have driver. [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult_slave_lite_v1_0_S00_AXI.vhd:24]
+WARNING: [Synth 8-3848] Net done in module/entity FP_Mult_slave_lite_v1_0_S00_AXI does not have driver. [/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ipshared/244d/hdl/FP_Mult_slave_lite_v1_0_S00_AXI.vhd:25]
+WARNING: [Synth 8-7129] Port clk in module IntAdder_17_Freq100_uid9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module IntMultiplier_11x11_22_Freq100_uid5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[15] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[14] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[13] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[12] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[11] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[10] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[9] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[8] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[7] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[6] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[5] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[4] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[3] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[2] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[1] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[0] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port done in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[15] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[14] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[13] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[12] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[11] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[10] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[9] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[8] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[7] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[6] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[5] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[4] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[3] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[2] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[1] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port X_in[0] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[15] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[14] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[13] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[12] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[11] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[10] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[9] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[8] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[7] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[6] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[5] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[4] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[3] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[2] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[1] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Y_in[0] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module FP_Mult_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2292.492 ; gain = 520.703 ; free physical = 7886 ; free virtual = 29837
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2310.305 ; gain = 538.516 ; free physical = 7886 ; free virtual = 29837
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2310.305 ; gain = 538.516 ; free physical = 7886 ; free virtual = 29837
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2310.305 ; gain = 0.000 ; free physical = 7886 ; free virtual = 29837
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2435.043 ; gain = 0.000 ; free physical = 7924 ; free virtual = 29875
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2435.078 ; gain = 0.000 ; free physical = 7923 ; free virtual = 29875
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2435.078 ; gain = 663.289 ; free physical = 7922 ; free virtual = 29874
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2443.047 ; gain = 671.258 ; free physical = 7922 ; free virtual = 29874
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2443.047 ; gain = 671.258 ; free physical = 7922 ; free virtual = 29874
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'FP_Mult_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'FP_Mult_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   waddr |                              010 |                               10
+                   wdata |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'one-hot' in module 'FP_Mult_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   raddr |                               01 |                               10
+                   rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'FP_Mult_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2443.047 ; gain = 671.258 ; free physical = 7922 ; free virtual = 29875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   17 Bit       Adders := 1     
+	   4 Input    7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               18 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP U0/FP_Mult_slave_lite_v1_0_S00_AXI_inst/my_fp_mult/uut/SignificandMultiplication/RR, operation Mode is: A*B.
+DSP Report: operator U0/FP_Mult_slave_lite_v1_0_S00_AXI_inst/my_fp_mult/uut/SignificandMultiplication/RR is absorbed into DSP U0/FP_Mult_slave_lite_v1_0_S00_AXI_inst/my_fp_mult/uut/SignificandMultiplication/RR.
+WARNING: [Synth 8-7129] Port R[15] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[14] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[13] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[12] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[11] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[10] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[9] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[8] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[7] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[6] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[5] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[4] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[3] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[2] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[1] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port R[0] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port done in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_FP_Mult_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2443.047 ; gain = 671.258 ; free physical = 7899 ; free virtual = 29851
+---------------------------------------------------------------------------------
+ Sort Area is  U0/FP_Mult_slave_lite_v1_0_S00_AXI_inst/my_fp_mult/uut/SignificandMultiplication/RR_0 : 0 0 : 863 863 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|IntMultiplier_11x11_22_Freq100_uid5 | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2511.047 ; gain = 739.258 ; free physical = 7766 ; free virtual = 29719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2511.047 ; gain = 739.258 ; free physical = 7766 ; free virtual = 29719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2521.070 ; gain = 749.281 ; free physical = 7759 ; free virtual = 29711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.883 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.883 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.883 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.883 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.883 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.883 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|IntMultiplier_11x11_22_Freq100_uid5 | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     4|
+|2     |DSP48E1 |     1|
+|3     |LUT1    |     1|
+|4     |LUT2    |     7|
+|5     |LUT3    |    13|
+|6     |LUT4    |    18|
+|7     |LUT5    |    18|
+|8     |LUT6    |    27|
+|9     |FDCE    |    49|
+|10    |FDRE    |    77|
+|11    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.883 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2695.883 ; gain = 799.320 ; free physical = 7603 ; free virtual = 29556
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2695.891 ; gain = 924.094 ; free physical = 7603 ; free virtual = 29556
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2695.891 ; gain = 0.000 ; free physical = 7603 ; free virtual = 29556
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2751.910 ; gain = 0.000 ; free physical = 7758 ; free virtual = 29710
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: cbb380a4
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 2751.945 ; gain = 1144.180 ; free physical = 7758 ; free virtual = 29710
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1906.022; main = 1878.657; forked = 274.861
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3450.957; main = 2751.914; forked = 963.906
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2775.922 ; gain = 0.000 ; free physical = 7758 ; free virtual = 29710
+INFO: [Common 17-1381] The checkpoint '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.runs/design_1_FP_Mult_0_0_synth_1/design_1_FP_Mult_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_FP_Mult_0_0, cache-ID = 61e7b737e33c9982
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2775.922 ; gain = 0.000 ; free physical = 7753 ; free virtual = 29705
+INFO: [Common 17-1381] The checkpoint '/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.runs/design_1_FP_Mult_0_0_synth_1/design_1_FP_Mult_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_FP_Mult_0_0_utilization_synth.rpt -pb design_1_FP_Mult_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 19 15:34:49 2025...

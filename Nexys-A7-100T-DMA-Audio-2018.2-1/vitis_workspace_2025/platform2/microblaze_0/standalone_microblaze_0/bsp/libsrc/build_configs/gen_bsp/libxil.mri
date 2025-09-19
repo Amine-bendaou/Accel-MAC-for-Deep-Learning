@@ -1,0 +1,6 @@
+create libxil.a
+addlib /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/libuartlite.a
+addlib /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/intc/src/libintc.a
+addlib /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform2/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/bram/src/libbram.a
+save
+end

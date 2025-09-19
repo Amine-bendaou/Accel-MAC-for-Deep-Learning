@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+// Vivado v2025.1 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Friday September 19, 2025 - 03:34:14 pm, from:
+//
+//     Map file     - /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/design_1.bmm
+//     Data file(s) - /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vivado_proj_debug/Nexys-A7-100T-DMA-Audio_NEW.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'design_1_i_microblaze_0.design_1_i_microblaze_0_local_memory_lmb_bram_8K_11_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

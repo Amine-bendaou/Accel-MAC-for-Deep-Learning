@@ -1,0 +1,26 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /tools/Xilinx/2025.1/Vitis/gnu/microblaze/lin/bin/mb-gcc 
+Build flags: ;;-mlittle-endian;-mxl-soft-mul;-mcpu=v11.0;-DSDT;;-MMD;-MP;-specs=/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-I/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform/microblaze_0/standalone_microblaze_0/bsp/include
+Id flags:  
+
+The output was:
+1
+/tools/Xilinx/2025.1/gnu/microblaze/lin/x86_64-oesdk-linux/usr/bin/microblaze-xilinx-elf/microblaze-xilinx-elf-ld.real: cannot find -lxil: No such file or directory
+collect2.real: error: ld returned 1 exit status
+
+
+The C compiler identification could not be found in "/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.d"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /tools/Xilinx/2025.1/Vitis/gnu/microblaze/lin/bin/mb-g++ 
+Build flags: ;;-mlittle-endian;-mxl-soft-mul;-mcpu=v11.0;-DSDT;;-MMD;-MP;-specs=/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-I/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform/microblaze_0/standalone_microblaze_0/bsp/include
+Id flags:  
+
+The output was:
+1
+/tools/Xilinx/2025.1/gnu/microblaze/lin/x86_64-oesdk-linux/usr/bin/microblaze-xilinx-elf/microblaze-xilinx-elf-ld.real: cannot find -lxil: No such file or directory
+collect2.real: error: ld returned 1 exit status
+
+
+The CXX compiler identification could not be found in "/home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.d"
+

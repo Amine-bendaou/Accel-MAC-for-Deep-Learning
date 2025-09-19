@@ -1,0 +1,4 @@
+domain_path: /home/intern/Downloads/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025/platform2/export/platform2/sw/standalone_microblaze_0
+app_src_dir: /tools/Xilinx/2025.1/Vitis/data/embeddedsw/lib/sw_apps/hello_world
+template: hello_world
+lang: c
