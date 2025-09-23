@@ -6,7 +6,7 @@ Bienvenue dans ce tutoriel ! Ici, on va explorer comment utiliser un processeur 
 
 Dans la première partie, toutes les opérations se faisaient uniquement avec la **BRAM** du FPGA. Cela fonctionne bien pour un petit nombre de valeurs, mais on est limité par la taille de la BRAM. L’objectif de cette nouvelle étape est de **pouvoir traiter plus de valeurs en utilisant la RAM externe**, en laissant le MicroBlaze gérer la communication entre le côté logiciel (soft) et matériel (hard) du FPGA.  
 
-Concrètement, tu vas apprendre à :  
+Concrètement, on va :  
 - Concevoir la partie **hardware** avec les blocs flottants existants et intégrer la RAM pour stocker tes données.  
 - Développer la partie **software** pour piloter le MicroBlaze et assurer la communication entre les valeurs stockées en RAM et le FPGA.  
 - Optimiser le traitement de données flottantes pour dépasser les limites de la BRAM seule.  
