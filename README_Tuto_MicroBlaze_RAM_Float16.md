@@ -1,16 +1,18 @@
-# Tuto MicroBlaze : Communication RAM-FPGA pour traitement de valeurs flottantes
+# MicroBlaze Tutorial: RAM-FPGA Communication for Floating-Point Data Processing
 
-## Contexte
+## Context
 
-Bienvenue dans ce tutoriel ! Ici, on va explorer comment utiliser un processeur **MicroBlaze** pour communiquer entre la RAM et un FPGA, afin de stocker et traiter un plus grand nombre de valeurs flottantes. Ce travail s’inscrit dans la continuité de ma première partie de stage, où j’ai conçu des blocs optimisés avec **Flopoco** pour effectuer des opérations de somme, multiplication et MAC en **float16** directement sur le FPGA.
+Welcome to this tutorial! Here, we will explore how to use a **MicroBlaze** processor to communicate between RAM and an FPGA, in order to store and process a larger number of floating-point values. This work builds on the first part of my internship, where I designed optimized blocks using **Flopoco** to perform addition, multiplication, and MAC operations in **float16** directly on the FPGA.
 
-Dans la première partie, toutes les opérations se faisaient uniquement avec la **BRAM** du FPGA. Cela fonctionne bien pour un petit nombre de valeurs, mais on est limité par la taille de la BRAM. L’objectif de cette nouvelle étape est de **pouvoir traiter plus de valeurs en utilisant la RAM externe**, en laissant le MicroBlaze gérer la communication entre le côté logiciel (soft) et matériel (hard) du FPGA.  
+In the first part, all operations were performed using only the FPGA's **BRAM**. This works well for a small number of values, but we are limited by the BRAM size. The goal of this next step is to **process more values by using external RAM**, with the MicroBlaze managing the communication between the software (soft) and hardware (hard) sides of the FPGA.
 
-Concrètement, on va :  
-- Concevoir la partie **hardware** avec les blocs flottants existants et intégrer la RAM pour stocker tes données.  
-- Développer la partie **software** pour piloter le MicroBlaze et assurer la communication entre les valeurs stockées en RAM et le FPGA.  
-- Optimiser le traitement de données flottantes pour dépasser les limites de la BRAM seule.  
+Specifically, you will learn to:
 
-Ce tuto est pensé pour être progressif : on commence par comprendre le **hardware**, puis on passe à la partie **software**, en t’expliquant clairement chaque étape et chaque choix de conception.
+* Design the **hardware** part using the existing floating-point blocks and integrate RAM to store the data.
+* Develop the **software** part to control the MicroBlaze and manage communication between values stored in RAM and the FPGA.
+* Optimize floating-point data processing to exceed the limits of using only BRAM.
+
+This tutorial is designed to be progressive: we start by understanding the **hardware**, then move to the **software** part, clearly explaining each step and design choice.
+
 
 ---
