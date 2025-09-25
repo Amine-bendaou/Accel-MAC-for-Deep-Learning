@@ -43,7 +43,7 @@ The example used here is a multiplier with flopoco, but the method can be applie
 - Keep the **Interface Type** unchanged (**AXI Lite**, by default).  
 - Define the number of **AXI registers** your IP will use.  
   - Example: for my flopoco multiplier, one register is used to send the operand(s), a register is used to return the result, a register is used to start the process, and another one is used to notice that the multiplication is done.  
-  - Note: Vivado requires at least **4 registers** even if fewer are needed.  
+  - 💡Note: Vivado requires at least **4 registers** even if fewer are needed.  
 - Remember: a single 32-bit AXI register can pack multiple smaller vectors (e.g., two 16-bit inputs for X and Y in one register in my case).
 
 ---
@@ -162,15 +162,21 @@ Each register is **32 bits wide**.
 
 ---
 
-#### Important Note
+#### ⚠️ Important Note
 
-If you want to expose **specific ports** of your block at the **IP top-level**, you must manually add them in the top-level file of your IP (e.g., `FP_Mult.vhd`).
+If you want to expose **specific ports** of your block at the **IP**, you must manually add them in the top-level file of your IP (e.g., `FP_Mult.vhd`).
 
-This involves three steps:
+This involves three steps (**Make these changes in the top file e.g., `FP_Mult.vhd`, not in the `FP_Mult_slave_lite_v1_0_S00_AXI.vhd` file**):
 
-1. **Declare the ports** in the `-- Users to add ports here ... -- User ports ends` section.
-2. **Add them to the component declaration** in the architecture of `FP_Mult_slave_lite_v1_0_S00_AXI.vhd`.
-3. **Map them in the port map** section of `FP_Mult_slave_lite_v1_0_S00_AXI.vhd`.
+1. **Declare the ports** here:
+
+   ```vhdl
+   -- Users to add ports here
+   -- User ports ends section
+
+2. Add them to the component declaration in the architecture of FP_Mult_slave_lite_v1_0_S00_AXI.vhd before the begin.
+
+3. Map them in the port map section of FP_Mult_slave_lite_v1_0_S00_AXI.vhd in the architecture after the begin.
 
 👉 A complete example of these files (`FP_Mult_slave_lite_v1_0_S00_AXI.vhd` and `FP_Mult.vhd`) is available in my Github just [here](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/tree/main/Nexys-A7-100T-DMA-Audio-2018.2-1/ip_repo/FP_Mult_1_0/hdl).
 
@@ -220,7 +226,7 @@ At this stage, your custom VHDL block is fully integrated as an AXI peripheral, 
 - After completing the tutorial available on my [GitHub](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/blob/main/README_Tuto_Vitis_unified_2025.md) (which explains how to correctly configure a Vitis 2025 project with a simple *Hello World* example), navigate to your `.c` file inside the **source** folder of the application you created.
 - Replace the default code provided by Vitis with your own, adapting it to your project.
 - An example of a workspace is also available on my [GitHub](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/tree/main/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025) as a reference. This example demonstrates how to write a `main.c` that enables communication between RAM and the hardware through MicroBlaze, allowing the user to enter input values in the terminal and display the computed results.
-- The complete project archive (Vitis + Vivado) is available [here] ().  
+- The complete project archive (Vitis + Vivado) is available [here](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/tree/main/Nexys-A7-100T-DMA-Audio-2018.2-1).  
 👉**Note:** For Vivado, make sure to import the project `Nexys-A7-100T-DMA-Audio_NEW.xpr` instead of `Nexys-A7-100T-DMA-Audio.xpr`.
 
 - Once your workspace is configured and your C file is adapted, you need to import the **XSA file** generated previously in Vivado.  
