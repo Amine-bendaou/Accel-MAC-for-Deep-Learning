@@ -35,7 +35,7 @@ The example used here is a multiplier with flopoco, but the method can be applie
 - Go to **Tools → Create and Package IP**.  
 - Choose **“Create a new AXI4 peripheral”**.  
 - Give a name and (optionally) a short description to your IP.  
-  > 💡 It’s a good practice to add a description for clarity.
+  <span style="color:red"> 💡 It’s a good practice to add a description for clarity.
 
 ---
 
@@ -43,7 +43,7 @@ The example used here is a multiplier with flopoco, but the method can be applie
 - Keep the **Interface Type** unchanged (**AXI Lite**, by default).  
 - Define the number of **AXI registers** your IP will use.  
   - Example: for my flopoco multiplier, one register is used to send the operand(s), a register is used to return the result, a register is used to start the process, and another one is used to notice that the multiplication is done.  
-  - 💡Note: Vivado requires at least **4 registers** even if fewer are needed.  
+<span style="color:red">💡**Note**: Vivado requires at least **4 registers** even if fewer are needed.  
 - Remember: a single 32-bit AXI register can pack multiple smaller vectors (e.g., two 16-bit inputs for X and Y in one register in my case).
 
 ---
@@ -155,8 +155,8 @@ The example used here is a multiplier with flopoco, but the method can be applie
 
 * **Register 0** → status register (`done`)
 * **Register 1** → control register (`start`)
-* **Register 2** → inputs (`X` and `Y`)
-* **Register 3** → output (`R`)
+* **Register 2** → inputs register (`X` and `Y`)
+* **Register 3** → output register (`R`)
 
 Each register is **32 bits wide**.
 
@@ -226,7 +226,8 @@ At this stage, your custom VHDL block is fully integrated as an AXI peripheral, 
 - After completing the tutorial available on my [GitHub](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/blob/main/README_Tuto_Vitis_unified_2025.md) (which explains how to correctly configure a Vitis 2025 project with a simple *Hello World* example), navigate to your `.c` file inside the **source** folder of the application you created.
 - Replace the default code provided by Vitis with your own, adapting it to your project.
 - An example of a workspace is also available on my [GitHub](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/tree/main/Nexys-A7-100T-DMA-Audio-2018.2-1/vitis_workspace_2025) as a reference. This example demonstrates how to write a `main.c` that enables communication between RAM and the hardware through MicroBlaze, allowing the user to enter input values in the terminal and display the computed results.
-- The complete project archive (Vitis + Vivado) is available [here](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/tree/main/Nexys-A7-100T-DMA-Audio-2018.2-1).  
+- The complete project archive (Vitis + Vivado) is available [here](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/tree/main/Nexys-A7-100T-DMA-Audio-2018.2-1).
+    
 👉**Note:** For Vivado, make sure to import the project `Nexys-A7-100T-DMA-Audio_NEW.xpr` instead of `Nexys-A7-100T-DMA-Audio.xpr`.
 
 - Once your workspace is configured and your C file is adapted, you need to import the **XSA file** generated previously in Vivado.  
