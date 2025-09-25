@@ -181,7 +181,7 @@ This involves three steps:
 * In the *Ports and Interfaces* tab, click **Merge changes from ports and interfaces wizard**.
 * Ensure that all steps are marked in green before proceeding.
 
-  > ⚠️ Note: It is fine if you see **2 warnings** in the *Customization Parameters* section and **1 warning** in the *Ports and Interfaces* section.
+  <span style="color:red">⚠️ Note: It is fine if you see **2 warnings** in the *Customization Parameters* section and **1 warning** in the *Ports and Interfaces* section.</span>
 
 ---
 
@@ -201,7 +201,7 @@ This involves three steps:
 * Once complete, go to the **Address Editor** tab.
 * Verify the register addresses assigned to your IP and other peripherals.
 
-  > ⚠️ Make sure there are no unassigned addresses.
+ <span style="color:red">⚠️ Make sure there are no unassigned addresses.</span>
 
 ---
 
