@@ -172,7 +172,7 @@ This involves three steps:
 2. **Add them to the component declaration** in the architecture of `FP_Mult_slave_lite_v1_0_S00_AXI.vhd`.
 3. **Map them in the port map** section of `FP_Mult_slave_lite_v1_0_S00_AXI.vhd`.
 
-👉 A complete example of these files (`FP_Mult_slave_lite_v1_0_S00_AXI.vhd` and `FP_Mult.vhd`) is available in my Github just [Here](https://digilent.com/reference/programmable-logic/guides/install-board-files).
+👉 A complete example of these files (`FP_Mult_slave_lite_v1_0_S00_AXI.vhd` and `FP_Mult.vhd`) is available in my Github just [here](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/tree/main/Nexys-A7-100T-DMA-Audio-2018.2-1/ip_repo/FP_Mult_1_0/hdl).
 
 ### Step 8 – Merge and Repackage the IP
 
