@@ -217,9 +217,9 @@ At this stage, your custom VHDL block is fully integrated as an AXI peripheral, 
 
 ## Software Design
 
-- After completing the tutorial available on my [GitHub]() (which explains how to correctly configure a Vitis 2025 project with a simple *Hello World* example), navigate to your `.c` file inside the **source** folder of the application you created.  
-  Replace the default code provided by Vitis with your own, adapting it to your project.  
-  A sample workspace is also available on my GitHub as a reference. This example demonstrates how to write a `main.c` that enables communication between RAM and the hardware through MicroBlaze, allowing the user to enter input values in the terminal and display the computed results.
+- After completing the tutorial available on my [GitHub](https://github.com/Amine-bendaou/Accel-MAC-for-Deep-Learning/blob/main/README_Tuto_Vitis_unified_2025.md) (which explains how to correctly configure a Vitis 2025 project with a simple *Hello World* example), navigate to your `.c` file inside the **source** folder of the application you created.  
+-Replace the default code provided by Vitis with your own, adapting it to your project.  
+-An example of a workspace is also available on my [GitHub]() as a reference. This example demonstrates how to write a `main.c` that enables communication between RAM and the hardware through MicroBlaze, allowing the user to enter input values in the terminal and display the computed results.
 
 - Once your workspace is configured and your C file is adapted, you need to import the **XSA file** generated previously in Vivado.  
   Go to **Platform → Settings → vitis-comp.json**, then perform **Switch / Re-read XSA** and select the XSA file you exported earlier.
