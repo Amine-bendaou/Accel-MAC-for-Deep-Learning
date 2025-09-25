@@ -215,6 +215,33 @@ This involves three steps:
 
 At this stage, your custom VHDL block is fully integrated as an AXI peripheral, instantiated in Vivado, and ready to be accessed from C code in **Vitis**. Now, let’s move on to the **Software part in Vitis**.
 
+## Software Design
+
+- After completing the tutorial available on my [GitHub]() (which explains how to correctly configure a Vitis 2025 project with a simple *Hello World* example), navigate to your `.c` file inside the **source** folder of the application you created.  
+  Replace the default code provided by Vitis with your own, adapting it to your project.  
+  A sample workspace is also available on my GitHub as a reference. This example demonstrates how to write a `main.c` that enables communication between RAM and the hardware through MicroBlaze, allowing the user to enter input values in the terminal and display the computed results.
+
+- Once your workspace is configured and your C file is adapted, you need to import the **XSA file** generated previously in Vivado.  
+  Go to **Platform → Settings → vitis-comp.json**, then perform **Switch / Re-read XSA** and select the XSA file you exported earlier.
+
+- Next, build the **platform**, then build the **application**, and finally run it.
+
+> ⚠️ **Important:**  
+> If your code requires communication with the terminal via UART, you must open a terminal **before running your application** and execute the following command:  
+> ```bash
+> sudo tio -b 230400 /dev/ttyUSB1
+> ```  
+> This allows you to establish a serial connection with the MicroBlaze over UART.
+
+---
+
+## Notes
+
+- When you modify your XSA in Vivado (e.g., by adding or changing an IP), it is strongly recommended to **create a new application** in Vitis instead of reusing the old one.  
+- Import all your source files (`.c`, `.h`, `.ld`) from the previous application into the new one, and associate it with the newly generated platform based on the updated XSA.  
+- This avoids unexpected bugs, such as the terminal showing default placeholder values (`0xDEC0DE1C`) for all defined registers, which typically occur when switching to a new XSA inside an existing application.
+
+ 
 
 
 
